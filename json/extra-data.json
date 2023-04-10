@@ -1,0 +1,35 @@
+[
+  [
+    "Nötfärs köttfärs fett 5% rå",
+    "notfarskottfarsfett5ra",
+    "notfarskottfarsfett15ra",
+    "Willys, Nötfärs 5%, Garant, april 2023",
+    {
+      "fett": 5,
+      "protein": 21,
+      "energi": 130
+    }
+  ],
+  [
+    "Kalkon, Pärsons Tunna Skivor",
+    "kalkonroktparsons",
+    "kalkonrokt",
+    "Pärsons hemsida (parsons.se), april 2023.",
+    {
+      "fett": 2,
+      "protein": 19,
+      "kolhydrater": 1,
+      "energi": 100
+    }
+  ],
+  [
+    "Kyckling Bröstfilé 3% fett",
+    "kycklingbrostfiluskinnra3",
+    "kycklingbrostfiluskinnra",
+    "Willys,  Garant, Kyckling- och Majskycklingbröstfiléer, april 2023",
+    {
+      "fett": 3,
+      "energi": 120
+    }
+  ]
+]

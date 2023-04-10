@@ -1,0 +1,36 @@
+# Bräserad kyckling
+Start: 16:50
+
+Renskär, småbitar läggs på lite senare än de stora.
+Salta, först ena sidan, sedan andra.
+Fullt ös - 9, skruva ner till 8 om det börjar brännas (vi har inte jättemycket smör)
+Dryg halvliter vatten eller tills pannan är nästan full.
+Skruva ner till 8. Inte skruva ner för mycket. Vill att det ska reduceras.
+
+
+Plocka ut det små delarna om du känner att de är genomstekta
+
+Tålamod i övrigt.. 5-15 minuter.
+
+Stekt 1006 -> 795g (bra kyckling -> sämre vatteninsprutad kan förlora så mycket som 40-50%)
+Kolla om du delar i portioner att alla får ungefär lika mycket (räcker inte ögonmått väg)
+
+Fyll stekjärnet till hälften med vatten
+Tillsätt 40g dijonsenap
+Tillsätt 30g Maizena redning
+Rör runt se till att det inte blir klumpar
+Addera ett halvt krus koriander om du vill.
+
+Paus: 17.25
+Började igen typ 17.50
+
+Lite Maizena i Brocoli-tjosan
+Använde en halv riktigt stor paprika, 170g
+Choppade ner i Brocoli-tjosan.
+
+# Italienska köttfärssåsen
+Slarvade bort basilikan, körde bladpersilja istället
+Juste med osten.
+La till 32,5 gram zucchini per portion 
+(en halv liten en på 150g för 4 portioner, en slice)
+Blev lite överfullt pannan
