@@ -1,8 +1,9 @@
 function printEtikett() {
   let d = new Date().toISOString().slice(0, 10);
   d = prompt('Tillagningsdatum (ÅÅÅÅ-MM-DD)', d);
-  let numberOf = +prompt('Antal etiketter', '4');
   if (!d) { return; }
+  let numberOf = +prompt('Antal etiketter', '4');
+  if (!numberOf) { return; }
   let a = $('h2,h3,table:first,ol,hr').hide();
   let wDay = ['sön', 'mån', 'tis', 'ons', 'tor', 'fre', 'lör'][new Date(d).getDay()];
   wDay && (d = wDay + 'dag ' + d);
