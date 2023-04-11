@@ -9,7 +9,7 @@
 | Maizena-redning, ljus| potatismjolelpotatisgryn   | 1/2   | matsked(ar)                 |  1/2 * 10 |
 | Dijonsenap           | senapsvensk                | 3/4   | matsked(ar)                 |  3/4 * 20 |
 | Röd paprika          | paprikarod                 | 1/2   | medelstor(a) paprik(a/or)   |       110 |
-| Koriander            | basilika                   | 1/4   | kruka                       |  1/4 * 35 |
+| Koriander            | basilikafarsk              | 1/4   | kruka                       |  1/4 * 35 |
 
 ### Gör så här
 1. Sätt en panna (gärna gjutjärn) på hög värme och smält smöret.
