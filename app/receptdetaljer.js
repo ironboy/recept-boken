@@ -14,8 +14,8 @@ function receptdetaljer() {
 
   return [/*html*/`
     <div class="recept-details">
-      <h1>${name}</h1>
       <img onload="showImageOnLoad(this)" src="/images/resized/${slug}-w1000.jpg">
+      <h1><span>${name}</span></h1>
       ${show.html}
       <br><br>
       <h2><div class="printEtikett">Skriv ut etiketter</div></h2>
