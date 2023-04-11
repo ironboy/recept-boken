@@ -6,6 +6,14 @@ async function start() {
   startTime = Date.now();
   try {
     ndataObj = unpack(localStorage.ndata);
+    const { etag } = Object.fromEntries(
+      [...(await fetch('/json/extra-data.json', { method: 'head' })).headers.entries()]
+    );
+    if (etag !== localStorage.etagExtraData) {
+      localStorage.etagExtraData = etag;
+      console.log('Extra data changed, rebuilding cached data...');
+      throw new Error();
+    }
     console.log('Using locally stored nutrition data.');
   } catch (e) {
     if (fetchUncompressedAndCompress) {

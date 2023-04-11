@@ -162,6 +162,16 @@ th:last-child {
   display: none;
 }
 
+.recept-in-list {
+  min-height: 140px;
+}
+
+.recept-in-list img {
+  float: right;
+  display: none;
+  margin-left: 30px;
+}
+
 @media print {
 
   header,

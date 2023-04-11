@@ -21,7 +21,14 @@ function prepRecept(x) {
         return true;
       }
     };
-    html += `<h3><a href="#receptdetaljer/${slug}">${title}</a></h3>`;
+    html += /*html*/`
+      <a href="#receptdetaljer/${slug}">
+        <div class="recept-in-list">
+          <img onload="showImageOnLoad(this)" src="/images/resized/${slug}-w200.jpg">
+          <h3>${title}</h3>
+        </div>  
+      </a>
+    `;
   }
   return html;
 }
