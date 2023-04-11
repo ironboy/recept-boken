@@ -1,4 +1,4 @@
-## Bräserade majskycklingfiléer, i Dijon- och korianderbaserad skysås med broccoli-ris
+## Bräserade majskycklingfiléer, i Dijon- och korianderbaserad skysås med broccoliris
 
 ### Ingredienser
 | Ingrediens           | Slug                       | Antal | Enhet                       | Vikt      |
