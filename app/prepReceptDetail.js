@@ -27,7 +27,6 @@ function prepReceptDetail(x) {
     let me = $('.showNutrionDetails');
     let text = me.text();
     me.text(text.includes('Visa') ? 'Dölj detaljer' : 'Visa detaljer');
-
     $('.ldetails .detailed')[text.includes('Visa') ? 'show' : 'hide']();
   });
   return dom.html();

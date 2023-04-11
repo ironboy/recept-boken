@@ -1,15 +1,15 @@
 ## Bräserade majskycklingfiléer, i Dijon- och korianderbaserad skysås med broccoli-ris
 
 ### Ingredienser
-| Ingrediens        | Slug                       | Antal | Enhet                       | Vikt      |
-|-------------------|----------------------------|-------|-----------------------------|-----------|
-| Majskycklingbröst | kycklingbrostfiluskinnra3  | 1     | stor(a) filé(er)            |       250 |
-| Smör              | smorfett80                 | 10    | välvägd(a) gram             |        10 |
-| Broccoliris       | broccolifryst              | 1/4   | 500g-förpackning(ar)        |       125 | 
-| Maizena-redning   | potatismjolelpotatisgryn   | 3/4   | matsked(ar)                 |       7.5 |
-| Dijonsenap        | senapsvensk                | 1/2   | matsked(ar)                 |        10 |
-| Röd paprika       | paprikarod                 | 1/2   | medelstor(a) paprik(a/or)   |       110 |
-| Koriander         | basilika                   | 1/4    | kruka                      |  1/4 * 35 |
+| Ingrediens           | Slug                       | Antal | Enhet                       | Vikt      |
+|----------------------|----------------------------|-------|-----------------------------|-----------|
+| Majskycklingbröst    | kycklingbrostfiluskinnra3  | 1     | stor(a) filé(er)            |       250 |
+| Smör                 | smorfett80                 | 10    | välvägd(a) gram             |        10 |
+| Broccoliris          | broccolifryst              | 1/4   | 500g-förpackning(ar)        |       125 | 
+| Maizena-redning, ljus| potatismjolelpotatisgryn   | 1/2   | matsked(ar)                 |  1/2 * 10 |
+| Dijonsenap           | senapsvensk                | 3/4   | matsked(ar)                 |  3/4 * 20 |
+| Röd paprika          | paprikarod                 | 1/2   | medelstor(a) paprik(a/or)   |       110 |
+| Koriander            | basilika                   | 1/4   | kruka                       |  1/4 * 35 |
 
 ### Gör så här
 1. Sätt en panna (gärna gjutjärn) på hög värme och smält smöret.
@@ -58,16 +58,16 @@
 1. Do it!
 
 
-## Fläskfilé med blomkålsris
+## Helstekt fläskfilé, med knippmorötter och bladpersilja
 
 ### Ingredienser
-| Ingrediens        | Slug                       | Antal | Enhet                           | Vikt     |
-|-------------------|----------------------------|-------|---------------------------------|----------|
-| Fläskfilé         | grisflaskfilra             | 300   | gram                            |      300 |
-| Smör              | smorfett80                 | 10    | välvägd(a) gram                 |       10 |
-| Blomkålsris       | blomkalfryst               | 1/4   | 500g-förpackning(ar)            |      125 | 
- 
-[initial portions to show](1)
+| Ingrediens           | Slug                       | Antal | Enhet                             | Vikt     |
+|----------------------|----------------------------|-------|-----------------------------------|----------|
+| Fläskfilé            | grisflaskfilra             |  350  | gram                              |      350 |
+| Smör                 | smorfett80                 |   10  | välvägd(a) gram                   |       10 |
+| Knippmorötter        | morot                      |    1  | relativt (liten/små) mor(ot/ötter)|       40 |
+| Maizena-redning, mörk| potatismjolelpotatisgryn   |  1/2  | matsked(ar)                       | 1/2 * 10 |
+| Bladpersilja         | persiljablad               | 1/4   | kruka                             | 1/4 * 35 |
 
 ### Gör så här
 1. Receptet inte klart än
@@ -79,15 +79,29 @@
 ### Ingredienser
 | Ingrediens        | Slug                       | Antal | Enhet                           | Vikt     |
 |-------------------|----------------------------|-------|---------------------------------|----------|
-| Kycklingmage      | kycklingmagera             | 250   | gram                            |      250 | 
+| Kycklingmage      | kycklingmagera             | 225   | gram                            |      225 | 
 | Majskycklingbröst | kycklingbrostfiluskinnra3  | 1/4   | stor(a) filé(er)                |  250 / 4 |
 | Olivolja          | olivoljaextrajungfruolja   | 2/3   | matsked(ar) - mät noga          | 2/3*13.8 |
 | Oystersås         | teriyakisas                | 1/2   | matskedar                       |      7.5 |
 | Schalottenlök     | syltlokinlagd              | 1     | schalottenlök                   |       30 |
 | Blomkålsris       | blomkalfryst               | 1/4   | 500g-förpackning(ar)            |      125 | 
-
+| Koriander         | basilika                   | 1/4   | kruka                           | 1/4 * 35 |
+| Lime              | lime                       | 1/4   | saften från... pressa ner       | 1/4 * 15 |
  
-[initial portions to show](1)
 
 ### Gör så här
 1. Receptet inte klart än
+
+
+## Kycklingpasta Tricolore
+
+### Ingredienser
+| Ingrediens              | Slug                           | Antal | Enhet                            | Vikt     |
+|-------------------------|--------------------------------|-------|----------------------------------|----------|
+| Majskycklingbröst       | kycklingbrostfiluskinnra3      | 3/4   | stor(a) filé(er)                 |    750/4 |
+| Olivolja                | olivoljaextrajungfruolja       | 1/3   | matsked(ar) - mät noga!          | 1/3*13.8 |
+| Fusilli Tricolore       | pasta                          | 12/4  | gram, väg!                       |    150/4 |
+| Körsbärstomater         | smatomaterrodatypkorsbarstomat | 1/4   | burk(ar), 400g per burk          |      100 | 
+| Tomatpuré - dubbelkonc. | tomatpuredubbel                |   1   | matsked(ar)                      |       15 |  
+| Italiensk hårdost       | osthardostfett31               | 7.5   | välvägda gram                    |      7.5 |
+| Basilika                | basilikafarsk                  | 1/4   | kruk(a/or), eller bladpersilja...| 1/4 * 35 |

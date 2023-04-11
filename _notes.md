@@ -34,3 +34,36 @@ Juste med osten.
 La till 32,5 gram zucchini per portion 
 (en halv liten en på 150g för 4 portioner, en slice)
 Blev lite överfullt pannan
+
+
+------
+
+Burmesisk...
+
+Vad väger en charlottenlök (stora på ICA)?
+250g = 6 -> 42 g styck
+
+3*40 = 120
+4*30 = 120
+
+OLJA TOG 2 ISTÄLLET FÖR 2 OCH 2/3  PÅ 4 PORT
+FICK LÄGGA TILL 3/4-1 TILL HALVVÄGS GENOM BRYNING
+
+HÄLLDE I TVÅ MATSKEDAR REDNING MEN INGET HÄNDE...
+(räknar inte - hjälpte inte mycket)
+
+TAR JÄVLA TID ATT KOKA NER...
+
+OCH HÄLLDE I BLOMKÅLSRISET I TRON ATT DET SKULLE REDA... det gjorde det inte!
+
+TYP 1/2 BURK CHILI, LAGERBLAD, 1 LIME, 1/3 BURK? STARK CURRY
+
+
+
+
+Kycklingpasta Tricolore
+-----------------------
+Gick bra. 
+Dock: Fick lägga till dubbelkoncetrerad puré i databasen.
+TODO: Den räknar inte om detaljvärdena på kolhydrater (borde lägga till - ORKAR INTE NU)
+Kl 23.13. Arbetsdag i morgon.
