@@ -12,7 +12,7 @@ function nChartAnimate(name) {
       if (name) {
         let l = $('.lname');
         l.text(name.slice(0, 1 + name.length * co / 40));
-        l.css({ marginTop: -Math.round(l.height() - 36) });
+        l.css({ marginTop: -Math.round(l.height() - 46) });
       }
       ++co === 50 && clearInterval(interval);
     }, 20);
