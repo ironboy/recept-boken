@@ -67,11 +67,20 @@ main {
 
 table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 td {
   padding-right: 40px;
   text-align: right;
+}
+
+.ldetails tr:nth-child(even):not(.heading) {
+  background-color: #eee;
+}
+
+.ldetails tr:last-child {
+  border-bottom: 2px solid #eee;
 }
 
 td:first-child {
@@ -204,6 +213,76 @@ th:last-child {
   float: right;
   display: none;
   margin-left: 30px;
+}
+
+.nChart {
+  width: 100%;
+  height: 40vh;
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-top: -20px !important;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.nChart+* {
+  margin-top: calc(40vh - 90px);
+  position: relative;
+}
+
+.nChart+* h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.dia {
+  margin: 40px 100px;
+}
+
+.nChart .dia>* {
+  height: calc(35vh - 80px);
+  float: left;
+}
+
+.nChart .protein,
+td.xprotein::before {
+  background-color: #417e45;
+}
+
+.nChart .kolhydrater,
+td.xkolhydrater:before {
+  background-color: #50789a;
+}
+
+.nChart .fibrer,
+td.xfibrer:before {
+  background-color: #708ca4;
+}
+
+.nChart .fett,
+td.xfett:before {
+  background-color: #d3c062;
+}
+
+
+.nChart .alkohol,
+td.xalkohol:before {
+  background-color: #8b4a4a;
+}
+
+td[class^="x"]:before {
+  content: '';
+  position: absolute;
+  margin-top: 2px;
+  left: 150px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.recept-details td[class^="x"]:before {
+  display: none;
 }
 
 @media screen {

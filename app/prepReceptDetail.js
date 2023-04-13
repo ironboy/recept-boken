@@ -19,7 +19,9 @@ function prepReceptDetail(x) {
   details.find('tr').each(function () {
     let me = $(this);
     me.text().includes('vatten') && (keep = false);
-    me.text().includes('makrokomponenter') && me.remove();
+    me.text().includes('makrokomponenter') && me.hide();
+    me.text().includes('aska') && (keep = false);
+    me.text().includes('aska') && me.after('<tr style="display:none"></tr>');
     !keep && me.addClass('detailed');
   });
   details.find('h2').append('<span class="showNutrionDetails">Visa detaljer</span>');
@@ -29,5 +31,6 @@ function prepReceptDetail(x) {
     me.text(text.includes('Visa') ? 'Dölj detaljer' : 'Visa detaljer');
     $('.ldetails .detailed')[text.includes('Visa') ? 'show' : 'hide']();
   });
+  dom.find('.nChart').remove();
   return dom.html();
 }

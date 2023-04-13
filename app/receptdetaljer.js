@@ -14,7 +14,7 @@ function receptdetaljer() {
 
   return [/*html*/`
     <div class="recept-details">
-      <img onload="showImageOnLoad(this)" src="/images/resized/${slug}-w1000.jpg">
+      <img onload="showImageOnLoad(this)" src="/images/resized/${slug}-w2000.jpg">
       <h1><span>${name}</span></h1>
       ${show.html}
       <br><br>

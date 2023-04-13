@@ -3,7 +3,7 @@ let startTime = Date.now(), loadCounter = 0, _cl = 48;
 let ndataObj, ndata, receptMd, receptDetails, search = '';
 
 const scripts = [
-  '*jquery', '*marked', '*pako', 'recept', 'start',
+  '*jquery', '*marked', '*pako', 'recept', 'start', 'nChart',
   'menu', 'navigate', 'addEvent', 'pack', 'unpack',
   'livsmedelslista', 'livsmedelsdetaljer', 'printEtikett',
   'receptdetaljer', 'prepRecept', 'prepReceptDetail',

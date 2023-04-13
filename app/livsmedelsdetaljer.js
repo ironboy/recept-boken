@@ -1,8 +1,13 @@
 function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = false) {
+  let makroOrder = ('energi, protein, kolhydrater, fibrer, fett, alkohol, ' +
+    'fullkorn totalt, salt, vatten, aska, (skal etc.) avfall ').split(', ');
   let slug = location.hash.split('/').pop();
   show = show || { ...ndataObj[slug] };
   let name = show.namn || '404: Kan ej hitta detta livsmedel...';
+  let [chart, makrosInChart] = nChart(show);
+  let odd = false;
   let html = /*html*/`
+    ${chart}
     <table class="ldetails">
       <tr><td colspan="4">
         <h2 class="cap">${name}</h2>
@@ -11,20 +16,28 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
   for (let key in show) {
     if (typeof show[key] === 'string') { continue; }
     html += /*html*/`
-      <tr><td colspan="4">
+      <tr class="heading"><td colspan="4">
        <h3 class="cap">${key}</h3>
       </td></tr>
-      <tr>
+      <tr class="heading">
         <td><b>Ämne</b></td>
          <td><b>${showRDIPercent && ['vitaminer', 'mineralämnen'].includes(key) ? 'RDI %' : ''}</b></td>
         <td><b>${['vitaminer', 'mineralämnen'].includes(key) ? 'RDI' : ''}</b></td>
         <td><b>${perHeading}</b></td>
       </tr>
     `;
-    for (let subKey in show[key]) {
+    let makros = key === 'makrokomponenter';
+    if (odd) {
+      html += '<tr style="display:none"></tr>';
+      odd = !odd;
+    }
+    for (let subKey of makros ? makroOrder : Object.keys(show[key])) {
+      odd = !odd;
       let a = show[key][subKey];
+      (subKey === '(skal etc.) avfall ') && (subKey = 'avfall (skal etc.)')
+      if (!a) { continue; }
       html += /*html*/`<tr>
-        <td>${subKey.indexOf('summa') === 0 ? `<i>${subKey}</i>` : subKey}</td>
+        <td ${makros && makrosInChart.includes(subKey) ? `class="x${subKey}"` : ''}>${subKey.indexOf('summa') === 0 ? `<i>${subKey}</i>` : subKey}</td>
         <td>${showRDIPercent && a.RDI ? numFormatter(a.per100g * 100 / a.RDI, 0) + '%' : ''}</td>
         <td>${(a.RDI ? numFormatter(a.RDI) : '') + (a.RDI ? ' ' + a.enhet : '')}</td>
         <td>${numFormatter(a.per100g)} ${a.enhet}</td>
@@ -38,10 +51,5 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
       Livsmedelsdatabas.`}</i></p>`}
   `;
   // Livsmedelsdatabas, version 2015-01-19.
-  let dom = $('<div>' + html + '</div>');
-  let afterTr = dom.find('tr:contains("fibrer")');
-  let moveDown = ['alkohol', 'aska', 'avfall']
-    .map(x => dom.find('tr:contains("' + x + '")'));
-  moveDown.forEach(x => afterTr.after(x));
-  return dom.html();
+  return html;
 }
