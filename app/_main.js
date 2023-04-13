@@ -3,12 +3,13 @@ let startTime = Date.now(), loadCounter = 0, _cl = 48;
 let ndataObj, ndata, receptMd, receptDetails, search = '';
 
 const scripts = [
-  '*jquery', '*marked', '*pako', 'recept', 'start', 'nChart',
+  '*jquery', '*marked', '*pako', 'recept', 'start',
   'menu', 'navigate', 'addEvent', 'pack', 'unpack',
   'livsmedelslista', 'livsmedelsdetaljer', 'printEtikett',
   'receptdetaljer', 'prepRecept', 'prepReceptDetail',
   'calcNutrients', 'reCalculator', 'getQuantities', 'kebabify',
-  'fuzzyFraction', 'addExtraData', 'numFormatter', 'callLogger'
+  'fuzzyFraction', 'addExtraData', 'numFormatter', 'callLogger',
+  'nChart', 'nChartAnimate'
 ];
 
 const styles = [

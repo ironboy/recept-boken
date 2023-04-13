@@ -46,7 +46,10 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
         <td>${showRDIPercent && a.RDI ? numFormatter(a.per100g * 100 / a.RDI, 0) + '%' : ''}</td>
         <td ${makros && makrosInChart.includes(subKey) ? `class="x${subKey}"` : ''}>
           ${(a.RDI ? numFormatter(a.RDI) : '') + (a.RDI ? ' ' + a.enhet : '')}
-          ${makros && (f = energyFrom.find(({ n }) => n === subKey)) ? f.p + '%' : ''}
+          ${makros && (f = energyFrom.find(({ n }) => n === subKey)) ? `
+            <span class="epercent">${f.p}%</span>
+            <span class="epercentAnimate">0%</span>
+          ` : ''}
         </td>
         <td>${numFormatter(a.per100g)} ${a.enhet}</td>
       </tr>`;
@@ -58,6 +61,7 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
       `Alla näringsvärden kommer från Livsmedelsverkets 
       Livsmedelsdatabas.`}</i></p>`}
   `;
+  nChartAnimate();
   // Livsmedelsdatabas, version 2015-01-19.
   return html;
 }

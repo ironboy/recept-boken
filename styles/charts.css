@@ -20,7 +20,13 @@
 }
 
 .nChart:not(.in-recept) .dia {
+  width: 0;
   margin: 40px 100px;
+}
+
+.nChart:not(.in-recept) .dia.animate {
+  width: calc(100% - 200px);
+  transition: width 1s;
 }
 
 .dia>*:first-child {
@@ -83,4 +89,16 @@ td[class^="x"]:before {
 
 td[class^="x"] {
   position: relative;
+}
+
+.epercent {
+  display: none;
+}
+
+.recept-details .epercent {
+  display: inline;
+}
+
+.recept-details .epercentAnimate {
+  display: none;
 }
