@@ -19,13 +19,27 @@
   margin-bottom: 30px;
 }
 
+.nChart .dia::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .nChart:not(.in-recept) .dia {
   width: 0;
-  margin: 40px 100px;
+  /*margin: 40px 100px;*/
+}
+
+.nChart .dia {
+  background-image: url('/images/grain.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  border-radius: 10px;
 }
 
 .nChart:not(.in-recept) .dia.animate {
-  width: calc(100% - 200px);
+  /*width: calc(100% - 200px);*/
+  width: 100%;
   transition: width 1s;
 }
 
@@ -39,16 +53,25 @@
   border-bottom-right-radius: 10px;
 }
 
+.nChart.in-recept {
+  margin-top: 25px;
+}
+
 .nChart .dia>* {
-  margin-top: 14px;
   height: 30px;
   float: left;
 }
 
 .nChart:not(.in-recept) .dia>* {
   margin-top: 0;
-  height: calc(35vh - 80px);
+  /*height: calc(35vh - 80px);*/
+  height: 40vh;
 }
+
+.nChart .dia * {
+  mix-blend-mode: multiply;
+}
+
 
 .nChart .protein,
 td.xprotein::before {
@@ -101,4 +124,13 @@ td[class^="x"] {
 
 .recept-details .epercentAnimate {
   display: none;
+}
+
+.nChart:not(.in-recept) * {
+  border-radius: 0 !important;
+}
+
+.lname {
+  font-size: 34px;
+  margin-top: 5px;
 }

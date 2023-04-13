@@ -4,13 +4,13 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
   let slug = location.hash.split('/').pop();
   show = show || { ...ndataObj[slug] };
   let name = show.namn || '404: Kan ej hitta detta livsmedel...';
-  let [chart, makrosInChart, energyFrom] = nChart(show);
+  let [chart, makrosInChart, energyFrom] = show.namn ? nChart(show) : [];
   let odd = false, f;
   let html = /*html*/`
-    ${chart}
+    ${chart || ''}
     <table class="ldetails">
       <tr><td colspan="4">
-        <h2 class="cap">${name}</h2>
+        <h2 class="${showRDIPercent ? '' : 'lname'} cap">${showRDIPercent ? name : '&nbsp;'}</h2>
       </td></tr>
   `;
   for (let key in show) {
@@ -61,7 +61,7 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
       `Alla näringsvärden kommer från Livsmedelsverkets 
       Livsmedelsdatabas.`}</i></p>`}
   `;
-  nChartAnimate();
+  nChartAnimate(!showRDIPercent && name);
   // Livsmedelsdatabas, version 2015-01-19.
   return html;
 }
