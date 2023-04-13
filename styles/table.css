@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding-right: 40px;
+  text-align: right;
+}
+
+.ldetails tr:nth-child(even):not(.heading) {
+  background-color: #eee;
+}
+
+.ldetails tr:last-child {
+  border-bottom: 2px solid #eee;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-family: 'Titillium Web';
+  font-size: 100%;
+  display: inline-block;
+  margin-bottom: 20px;
+}

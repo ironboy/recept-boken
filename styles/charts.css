@@ -1,0 +1,86 @@
+.nChart:not(.in-recept) {
+  width: 100%;
+  height: 40vh;
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-top: -20px !important;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.nChart:not(.in-recept)+* {
+  margin-top: calc(40vh - 90px);
+  position: relative;
+}
+
+.nChart:not(.in-recept)+* h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.nChart:not(.in-recept) .dia {
+  margin: 40px 100px;
+}
+
+.dia>*:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dia>*:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nChart .dia>* {
+  margin-top: 14px;
+  height: 30px;
+  float: left;
+}
+
+.nChart:not(.in-recept) .dia>* {
+  margin-top: 0;
+  height: calc(35vh - 80px);
+}
+
+.nChart .protein,
+td.xprotein::before {
+  background-color: #417e45;
+}
+
+.nChart .kolhydrater,
+td.xkolhydrater:before {
+  background-color: #50789a;
+}
+
+.nChart .fibrer,
+td.xfibrer:before {
+  background-color: #708ca4;
+}
+
+.nChart .fett,
+td.xfett:before {
+  background-color: #d3c062;
+}
+
+
+.nChart .alkohol,
+td.xalkohol:before {
+  background-color: #8b4a4a;
+}
+
+td[class^="x"]:before {
+  content: '';
+  position: absolute;
+  margin-top: 2px;
+  right: 80px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+td[class^="x"] {
+  position: relative;
+}

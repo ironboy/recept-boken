@@ -1,0 +1,22 @@
+@media screen {
+
+  .hiddenOnScreen {
+    display: none;
+  }
+
+}
+
+@media print {
+
+  header,
+  .portionChange,
+  .showNutrionDetails,
+  .printEtikett {
+    display: none;
+  }
+
+  .recept-details img {
+    display: none !important;
+  }
+
+}

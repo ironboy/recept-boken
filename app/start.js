@@ -1,7 +1,7 @@
 let fetchUncompressedAndCompress = false; // get data for compressed json file
 
 async function start() {
-  console.log(...niceLog('Total script load time', Date.now() - startTime, 'ms'));
+  console.log(...niceLog('Total script & styles load time', Date.now() - startTime, 'ms'));
   console.log('-'.repeat(_cl));
   startTime = Date.now();
   try {
