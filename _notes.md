@@ -67,3 +67,15 @@ Gick bra.
 Dock: Fick lägga till dubbelkoncetrerad puré i databasen.
 TODO: Den räknar inte om detaljvärdena på kolhydrater (borde lägga till - ORKAR INTE NU)
 Kl 23.13. Arbetsdag i morgon.
+
+
+
+OCH VIN/ALKOHOL
+Systembolaget gör så här för ett vitt torrt vin: Sockerhalt 0,4 g/100ml
+Det är samma som 0,4 g / 100g
+Det är kcal: 1,6 (ingenting)
+Men så kommer alkoholen: 12.5 vol% = först till viktprocent = 12.5 / 1.25 = 10 viktprocent
+(Så dela med 1.25)
+Nu kan vi räkna ut kcal på alkohol: 7kcal per gram -> 10 viktprocent * 7kcal = 70 kcal/100g
+Så 0,4 kcal + 70 kcal = 70,4 kcal per 100g eller ca 700 kcal / liter
+Själv säge Livsmedelsveket 68kcal/100g -> väldigt nära. SÅ HÄR RÄKNAR MAN!
