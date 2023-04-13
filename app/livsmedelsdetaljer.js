@@ -4,8 +4,8 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
   let slug = location.hash.split('/').pop();
   show = show || { ...ndataObj[slug] };
   let name = show.namn || '404: Kan ej hitta detta livsmedel...';
-  let [chart, makrosInChart] = nChart(show);
-  let odd = false;
+  let [chart, makrosInChart, energyFrom] = nChart(show);
+  let odd = false, f;
   let html = /*html*/`
     ${chart}
     <table class="ldetails">
@@ -15,18 +15,23 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
   `;
   for (let key in show) {
     if (typeof show[key] === 'string') { continue; }
+    let makros = key === 'makrokomponenter';
     html += /*html*/`
       <tr class="heading"><td colspan="4">
        <h3 class="cap">${key}</h3>
       </td></tr>
       <tr class="heading">
         <td><b>Ämne</b></td>
-         <td><b>${showRDIPercent && ['vitaminer', 'mineralämnen'].includes(key) ? 'RDI %' : ''}</b></td>
-        <td><b>${['vitaminer', 'mineralämnen'].includes(key) ? 'RDI' : ''}</b></td>
+         <td><b>
+          ${showRDIPercent && ['vitaminer', 'mineralämnen'].includes(key) ? 'RDI %' : ''}
+        </b></td>
+        <td><b>
+          ${['vitaminer', 'mineralämnen'].includes(key) ? 'RDI' : ''}
+          ${makros ? 'Energi' : ''}
+        </b></td>
         <td><b>${perHeading}</b></td>
       </tr>
     `;
-    let makros = key === 'makrokomponenter';
     if (odd) {
       html += '<tr style="display:none"></tr>';
       odd = !odd;
@@ -37,9 +42,12 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
       (subKey === '(skal etc.) avfall ') && (subKey = 'avfall (skal etc.)')
       if (!a) { continue; }
       html += /*html*/`<tr>
-        <td ${makros && makrosInChart.includes(subKey) ? `class="x${subKey}"` : ''}>${subKey.indexOf('summa') === 0 ? `<i>${subKey}</i>` : subKey}</td>
+        <td>${subKey.indexOf('summa') === 0 ? `<i>${subKey}</i>` : subKey}</td>
         <td>${showRDIPercent && a.RDI ? numFormatter(a.per100g * 100 / a.RDI, 0) + '%' : ''}</td>
-        <td>${(a.RDI ? numFormatter(a.RDI) : '') + (a.RDI ? ' ' + a.enhet : '')}</td>
+        <td ${makros && makrosInChart.includes(subKey) ? `class="x${subKey}"` : ''}>
+          ${(a.RDI ? numFormatter(a.RDI) : '') + (a.RDI ? ' ' + a.enhet : '')}
+          ${makros && (f = energyFrom.find(({ n }) => n === subKey)) ? f.p + '%' : ''}
+        </td>
         <td>${numFormatter(a.per100g)} ${a.enhet}</td>
       </tr>`;
     }

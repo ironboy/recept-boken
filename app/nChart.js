@@ -17,6 +17,6 @@ function nChart({ makrokomponenter: m }) {
           <div class="${n}" style = "width:${p}%"></div>
         `)}
       </div>
-    </div>`, energyFrom.map(x => x.n)
+    </div>`, energyFrom.map(x => x.n), energyFrom
   ];
 }

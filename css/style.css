@@ -215,7 +215,7 @@ th:last-child {
   margin-left: 30px;
 }
 
-.nChart {
+.nChart:not(.in-recept) {
   width: 100%;
   height: 40vh;
   display: block;
@@ -226,23 +226,39 @@ th:last-child {
   background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 
-.nChart+* {
+.nChart:not(.in-recept)+* {
   margin-top: calc(40vh - 90px);
   position: relative;
 }
 
-.nChart+* h2 {
+.nChart:not(.in-recept)+* h2 {
   color: white;
   margin-bottom: 30px;
 }
 
-.dia {
+.nChart:not(.in-recept) .dia {
   margin: 40px 100px;
 }
 
+.dia>*:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dia>*:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .nChart .dia>* {
-  height: calc(35vh - 80px);
+  margin-top: 14px;
+  height: 30px;
   float: left;
+}
+
+.nChart:not(.in-recept) .dia>* {
+  margin-top: 0;
+  height: calc(35vh - 80px);
 }
 
 .nChart .protein,
@@ -275,14 +291,15 @@ td[class^="x"]:before {
   content: '';
   position: absolute;
   margin-top: 2px;
-  left: 150px;
-  display: inline-block;
+  right: 80px;
+  display: block;
   width: 20px;
   height: 20px;
+  border-radius: 3px;
 }
 
-.recept-details td[class^="x"]:before {
-  display: none;
+td[class^="x"] {
+  position: relative;
 }
 
 @media screen {

@@ -31,6 +31,6 @@ function prepReceptDetail(x) {
     me.text(text.includes('Visa') ? 'Dölj detaljer' : 'Visa detaljer');
     $('.ldetails .detailed')[text.includes('Visa') ? 'show' : 'hide']();
   });
-  dom.find('.nChart').remove();
+  dom.find('.nChart').addClass('in-recept');
   return dom.html();
 }
