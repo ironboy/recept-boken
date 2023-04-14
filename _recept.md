@@ -48,9 +48,9 @@
 |-------------------|----------------------------|-------|---------------------------------|----------|
 | Ägg               | aggkonventionelltratt      | 2     | ägg                             |      120 |
 | Smör              | smorfett80                 | 5     | välvägd(a) gram                 |        5 |
-| Mager rökt kalkon | kalkonroktparsons          | 5     | tunna skiv(a/or)                | 5 * 5.71 |
+| Mager rökt kalkon | kalkonroktparsons          | 9     | tunna skiv(a/or)                | 9 * 5.71 |
 | Skogschampinjoner | champinjoner               | 75    | gram - väg dem                  |       75 |
-| Ost, 10%          | osthardostfett10           | 2     | skiv(a/or)                      |   2 * 12 |
+| Ost, 10%          | osthardostfett10           | 8     | skiv(a/or)                      |   8 * 12 |
 
 [initial portions to show](1)
 

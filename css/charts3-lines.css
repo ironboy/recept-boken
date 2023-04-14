@@ -1,0 +1,99 @@
+.hori-line {
+  position: absolute;
+  left: 15vw;
+  overflow-x: clip;
+  width: 0;
+  text-align: center;
+}
+
+.hori-line.animate {
+  width: 70vw;
+  transition: width 0.4s;
+}
+
+.hori-line img {
+  width: 70vw;
+  height: 4vh;
+  position: absolute;
+  left: 0;
+  top: 5vh;
+}
+
+.vert-line {
+  position: absolute;
+  bottom: 2vh;
+  right: 4vh;
+  height: 0;
+  overflow-y: hidden;
+  text-align: right;
+  line-height: 1;
+}
+
+.vert-line.animate {
+  height: 36vh;
+  transition: height 0.4s;
+}
+
+.vert-line img {
+  height: 30.5vh;
+  width: 4vh;
+  position: absolute;
+  bottom: 0;
+  right: 4vh;
+}
+
+.hori-line span,
+.vert-line span {
+  font-family: 'Patrick Hand SC';
+  font-size: 2.5vh;
+  color: #efefef;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  padding-top: 3px;
+  display: inline-block;
+  border-radius: 10px;
+  line-height: 1;
+}
+
+
+.e-line {
+  position: absolute;
+  right: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.e-line.animate {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.e-line img {
+  position: absolute;
+  right: 8vh;
+  height: 0.5vh;
+  width: 4.5vh;
+}
+
+.e-line span {
+  font-family: 'Patrick Hand SC';
+  position: absolute;
+  right: 3vh;
+  top: -1.5vh;
+  color: white;
+  line-height: 0.8;
+  display: block;
+  text-align: center;
+}
+
+.recept-details .hori-line,
+.recept-details .vert-line,
+.recept-details .e-line {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .hori-line {
+    left: 2vw;
+  }
+}

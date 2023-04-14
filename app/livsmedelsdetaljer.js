@@ -5,8 +5,10 @@ function livsmedelsdetaljer(show, perHeading = 'Mängd/100g', showRDIPercent = f
   show = show || { ...ndataObj[slug] };
   let name = show.namn || '404: Kan ej hitta detta livsmedel...';
   let [chart, makrosInChart, energyFrom] = show.namn ? nChart(show) : [];
-  let iOf = x => makrosInChart.includes(x) ? makrosInChart.indexOf(x) : 1000;
-  makroOrder.sort((a, b) => iOf(a) - iOf(b));
+  if (makrosInChart) {
+    let iOf = x => makrosInChart.includes(x) ? makrosInChart.indexOf(x) : 1000;
+    makroOrder.sort((a, b) => iOf(a) - iOf(b));
+  }
   let odd = false, f;
   let html = /*html*/`
     ${chart || ''}

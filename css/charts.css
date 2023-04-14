@@ -1,0 +1,87 @@
+.nChart:not(.in-recept) {
+  width: 100%;
+  height: 40vh;
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-top: -20px !important;
+  background-color: #485461;
+  background-image: linear-gradient(to bottom, #57c1eb 0%, #246fa8 100%);
+  overflow: hidden;
+}
+
+.nChart:not(.in-recept)+* {
+  margin-top: calc(40vh - 90px);
+  position: relative;
+}
+
+.nChart:not(.in-recept)+* h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.nChart .dia::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nChart:not(.in-recept) .dia {
+  width: 0;
+  /*margin: 40px 100px;*/
+}
+
+.nChart .dia {
+  background-image: url('/images/ui/grain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  border-radius: 10px;
+}
+
+.nChart:not(.in-recept) .dia {
+  margin-top: -80px;
+  -webkit-mask-image: url('/images/ui/mask.png');
+  mask-image: url('/images/ui/mask.png');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.nChart:not(.in-recept) .dia.animate {
+  /*width: calc(100% - 200px);*/
+  width: 100%;
+  transition: width 1s, margin-top 2s 1s;
+}
+
+.lheading.animate {
+  transition: bottom 2s;
+}
+
+.dia>*:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dia>*:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nChart.in-recept {
+  margin-top: 25px;
+}
+
+.nChart .dia>* {
+  height: 30px;
+  float: left;
+}
+
+.nChart:not(.in-recept) .dia>* {
+  margin-top: 0;
+  /*height: calc(35vh - 80px);*/
+  height: 40vh;
+}
+
+.nChart .dia * {
+  mix-blend-mode: multiply;
+}

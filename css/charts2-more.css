@@ -1,0 +1,71 @@
+.nChart .protein,
+td.xprotein::before {
+  background-color: #417e45;
+}
+
+.nChart .kolhydrater,
+td.xkolhydrater:before {
+  background-color: #50789a;
+}
+
+.nChart .fibrer,
+td.xfibrer:before {
+  background-color: #708ca4;
+}
+
+.nChart .fett,
+td.xfett:before {
+  background-color: #d3c062;
+}
+
+
+.nChart .alkohol,
+td.xalkohol:before {
+  background-color: #8b4a4a;
+}
+
+td[class^="x"]:before {
+  content: '';
+  position: absolute;
+  margin-top: 2px;
+  right: 80px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+td[class^="x"] {
+  position: relative;
+}
+
+.epercent {
+  display: none;
+}
+
+.recept-details .epercent {
+  display: inline;
+}
+
+.recept-details .epercentAnimate {
+  display: none;
+}
+
+.nChart:not(.in-recept) td,
+.nChart:not(.in-recept) div {
+  border-radius: 0 !important;
+}
+
+.lname {
+  font-size: 34px;
+  margin-top: 5px;
+  position: relative;
+  margin-bottom: 90px !important;
+}
+
+.lheading {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  bottom: -46px;
+}

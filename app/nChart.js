@@ -9,7 +9,7 @@ function nChart({ makrokomponenter: m }) {
     .filter(x => x.p >= 1)
     .sort((a, b) => a.p > b.p ? -1 : 1);
   const sum = () => energyFrom.reduce((a, c) => a + c.p, 0);
-  energyFrom[0].p += (100 - sum());
+  energyFrom[0] && (energyFrom[0].p += (100 - sum()));
   return [
     /*html*/`<div class="nChart">
       <div class="dia">
@@ -23,7 +23,9 @@ function nChart({ makrokomponenter: m }) {
       </div>
       <div class="hori-line">
         <img src="/images/ui/hori-arrow-line.png">
-        <span>${energyFrom.length === 1 ? 'Bara ' : ''}
+        <span>
+        ${energyFrom.length === 0 ? 'Ingen ' : ''}
+        ${energyFrom.length === 1 ? 'Bara ' : ''}
         ${energyFrom.map(x => x.n[0].toUpperCase() + x.n.slice(1)).join(', ')} <small>
         (</small>energi <small>%)</small></span>
       </div>

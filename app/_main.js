@@ -9,12 +9,13 @@ const scripts = [
   'receptdetaljer', 'prepRecept', 'prepReceptDetail',
   'calcNutrients', 'reCalculator', 'getQuantities', 'kebabify',
   'fuzzyFraction', 'addExtraData', 'numFormatter', 'callLogger',
-  'nChart', 'nChartAnimate'
+  'nChart', 'nChartAnimate', 'sleep'
 ];
 
 const styles = [
   'fonts', 'common', 'nav', 'main', 'table', 'details',
-  'details-images', 'charts', 'print'
+  'details-images', 'charts', 'charts2-more', 'charts3-lines',
+  'print'
 ];
 
 Array.prototype.toString = function () { return this.join(''); };
@@ -35,13 +36,14 @@ toLoad.map(x => {
   let folder = '/app';
   x[0] === '*' && (x = x.slice(1)) && (folder = '/libs');
   let css = x.slice(-4) === '.css';
-  folder = css ? '/styles' : folder;
+  folder = css ? '/css' : folder;
   let s = document.createElement(css ? 'link' : 'script');
   css && (s.setAttribute('rel', 'stylesheet'));
   let src = `${folder}/${x}${css ? '' : '.js'}`;
   s.setAttribute(css ? 'href' : 'src', src);
   s.onload = () => {
-    console.log(...niceLog('Loaded', src, 'time', Date.now() - startTime, 'ms'));
+    console.log(...niceLog(loadCounter + 1 + '. Loaded',
+      src, 'time', Date.now() - startTime, 'ms'));
     ++loadCounter === toLoad.length && callLogger() && start();
   }
   document[css ? 'head' : 'body'].append(s);

@@ -4,9 +4,7 @@ function receptdetaljer() {
   if (!show) {
     return `<h2>404: Kan ej hitta detta recept!</h2>`;
   }
-  // commenting this out since there seems to be a small layout shift
-  // (negative margin-top) if we save this...
-  show.beforeShow && show.beforeShow() //&& delete show.beforeShow;
+  show.beforeShow && show.beforeShow() && delete show.beforeShow;
   let name = show.name.replace(/,/, '---first-comma---');
   name = name.split('---first-comma---');
   name.length > 1 && (name[1] = '<small>' + name[1] + '</small>');
