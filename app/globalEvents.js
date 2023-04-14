@@ -1,4 +1,4 @@
-function globalEventListeners() {
+function globalEvents() {
   function resizer() {
     let x = $('.recept-in-list img');
     let y = $('.recept-in-list');

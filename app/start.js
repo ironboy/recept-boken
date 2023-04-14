@@ -2,7 +2,7 @@ let fetchUncompressedAndCompress = false; // get data for compressed json file
 let loremBank;
 
 async function start() {
-  globalEventListeners();
+  globalEvents();
   console.log(...niceLog('Total script & styles load time', Date.now() - startTime, 'ms'));
   console.log('-'.repeat(_cl));
   startTime = Date.now();

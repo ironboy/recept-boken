@@ -10,7 +10,7 @@ const scripts = [
   'calcNutrients', 'reCalculator', 'getQuantities', 'kebabify',
   'fuzzyFraction', 'addExtraData', 'numFormatter', 'callLogger',
   'nChart', 'nChartAnimate', 'sleep', 'fastCalc', 'loremGenerator',
-  'globalEventListeners'
+  'globalEvents'
 ];
 
 const styles = [
