@@ -1,0 +1,57 @@
+.recept-in-list {
+  border: 20px solid #000;
+  border-top: 0;
+  position: relative;
+}
+
+.recept-in-list h3 {
+  margin-top: 0;
+}
+
+.recept-in-list .textbased {
+  width: 70%;
+  padding: 20px;
+}
+
+.chart-in-recept-list {
+  width: calc(100% - 50px);
+  position: absolute;
+  width: 65%;
+  max-width: 600px;
+  bottom: 0;
+}
+
+.sum-in-recept {
+  text-align: center;
+  margin-top: 3px;
+  color: #000;
+  font-family: 'Patrick Hand SC';
+  font-weight: normal;
+  font-size: 18px;
+}
+
+@media screen and (max-width:800px) {
+  .sum-in-recept {
+    font-size: 2.2vw;
+  }
+}
+
+.recept-in-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.recept-in-list-info {
+  font-family: 'Lora';
+  font-weight: normal;
+  color: #000;
+  padding-bottom: 86px;
+  padding-right: 20px;
+}
+
+.recept-in-list img {
+  border-left: 5px solid #000;
+  border-bottom: 5px solid #000;
+  border-bottom-left-radius: 5px;
+}

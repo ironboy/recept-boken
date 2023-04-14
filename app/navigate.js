@@ -3,6 +3,7 @@ function navigate() {
   $('main').length || $('body').append('<main/>');
   let x = location.hash.slice(1).split('/')[0];
   x = window[x] ? x : 'recept';
+  $('main').attr('class', x);
   window.scrollTo(0, 0);
   let html = window[x](), runAfter = () => { };
   html instanceof Array && ([html, runAfter] = html);

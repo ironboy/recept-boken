@@ -1,9 +1,13 @@
 let fetchUncompressedAndCompress = false; // get data for compressed json file
+let loremBank;
 
 async function start() {
+  globalEventListeners();
   console.log(...niceLog('Total script & styles load time', Date.now() - startTime, 'ms'));
   console.log('-'.repeat(_cl));
   startTime = Date.now();
+  loremBank = (await (await (fetch('/json/lorem.json')))
+    .json()).split('</p>').filter(x => x).map(x => x + '</p>')
   try {
     ndataObj = unpack(localStorage.ndata);
     const { etag } = Object.fromEntries(

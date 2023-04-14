@@ -18,3 +18,9 @@ main {
   max-width: 750px;
   margin: 0 auto;
 }
+
+main.recept {
+  max-width: 100vw;
+  padding: 0;
+  border-top: 20px solid #000;
+}

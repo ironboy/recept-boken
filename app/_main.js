@@ -9,13 +9,14 @@ const scripts = [
   'receptdetaljer', 'prepRecept', 'prepReceptDetail',
   'calcNutrients', 'reCalculator', 'getQuantities', 'kebabify',
   'fuzzyFraction', 'addExtraData', 'numFormatter', 'callLogger',
-  'nChart', 'nChartAnimate', 'sleep', 'fastCalc'
+  'nChart', 'nChartAnimate', 'sleep', 'fastCalc', 'loremGenerator',
+  'globalEventListeners'
 ];
 
 const styles = [
   'fonts', 'common', 'nav', 'main', 'table', 'details',
-  'details-images', 'charts', 'charts2-more', 'charts3-lines',
-  'print'
+  'recept-in-list', 'details-images', 'charts', 'charts2-more',
+  'charts3-lines', 'print'
 ];
 
 Array.prototype.toString = function () { return this.join(''); };
@@ -23,7 +24,9 @@ Array.prototype.toString = function () { return this.join(''); };
 !debug && (console.table = () => { });
 const niceLog = (...a) => {
   let l = a.reduce((a, c) => a + (c + '').length, a.length - 1);
-  a[a.length - 3] && (a[a.length - 3] += ' '.repeat(_cl - l));
+  try {
+    a[a.length - 3] && (a[a.length - 3] += ' '.repeat(_cl - l));
+  } catch (e) { }
   return a;
 };
 
@@ -42,7 +45,8 @@ toLoad.map(x => {
   let src = `${folder}/${x}${css ? '' : '.js'}`;
   s.setAttribute(css ? 'href' : 'src', src);
   s.onload = () => {
-    console.log(...niceLog(loadCounter + 1 + '. Loaded',
+    console.log(...niceLog(((loadCounter + 1) + '')
+      .padStart(2, '0') + '. Loaded',
       src, 'time', Date.now() - startTime, 'ms'));
     ++loadCounter === toLoad.length && callLogger() && start();
   }

@@ -23,21 +23,24 @@ function prepRecept(x) {
       }
     };
     let makros = receptDetails[slug].makros = fastCalc(receptDetails[slug].rawHtml);
-    let x = nChart({ makrokomponenter: makros }, 'in-recept');
+    let x = nChart({ makrokomponenter: makros }, 'in-recept', false);
     let [chart, , info] = x;
     let joiner = '&nbsp;'.repeat(3) + '|' + '&nbsp;'.repeat(3);
     html += /*html*/`
       <a href="#receptdetaljer/${slug}">
         <div class="recept-in-list">
-          <img onload="showImageOnLoad(this)" src="/images/resized/${slug}-w200.jpg">
+          <img onerror="imageOnError(this)" onload="showImageOnLoad(this)" src="/images/resized/${slug}-w500.jpg">
           <div class="textbased">
             <h3>${title}</h3>
-            ${chart}
-            <p class="sum-in-recept">
-              ${info.map(({ n, p }) => `${n[0].toUpperCase() + n.slice(1)}
-              ${numFormatter(makros[n].per100g, 0)}${makros[n].enhet}`).join(joiner)}
-              ${joiner} <b>${numFormatter(makros.energi.per100g, 0)} kcal</b>
-            </p>
+            <div class="recept-in-list-info">${loremGenerator(1)}</div>
+            <div class="chart-in-recept-list">
+              ${chart}
+              <p class="sum-in-recept">
+                ${info.map(({ n, p }) => `${n[0].toUpperCase() + n.slice(1)}
+                ${numFormatter(makros[n].per100g, 0)}${makros[n].enhet}`).join(joiner)}
+                ${joiner} <b>${numFormatter(makros.energi.per100g, 0)} kcal</b>
+              </p>
+            </div>
           </div>
         </div>  
       </a>
