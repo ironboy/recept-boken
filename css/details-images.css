@@ -36,4 +36,5 @@
   float: right;
   display: none;
   margin-left: 30px;
+  width: calc(30% - 30px);
 }

@@ -85,7 +85,7 @@
 | Oystersås         | teriyakisas                | 1/2   | matskedar                       |      7.5 |
 | Schalottenlök     | syltlokinlagd              | 1     | schalottenlök                   |       30 |
 | Blomkålsris       | blomkalfryst               | 1/4   | 500g-förpackning(ar)            |      125 | 
-| Koriander         | basilika                   | 1/4   | kruka                           | 1/4 * 35 |
+| Koriander         | basilikafarsk              | 1/4   | kruka                           | 1/4 * 35 |
 | Lime              | lime                       | 1/4   | saften från... pressa ner       | 1/4 * 15 |
  
 

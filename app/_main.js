@@ -9,7 +9,7 @@ const scripts = [
   'receptdetaljer', 'prepRecept', 'prepReceptDetail',
   'calcNutrients', 'reCalculator', 'getQuantities', 'kebabify',
   'fuzzyFraction', 'addExtraData', 'numFormatter', 'callLogger',
-  'nChart', 'nChartAnimate', 'sleep'
+  'nChart', 'nChartAnimate', 'sleep', 'fastCalc'
 ];
 
 const styles = [

@@ -13,7 +13,7 @@ function receptdetaljer() {
   addEvent('.printEtikett', 'click', printEtikett);
 
   return [/*html*/`
-    <div class="recept-details">
+    <div class="recept-details not-lpage">
       <img onload="showImageOnLoad(this)" src="/images/resized/${slug}-w2000.jpg">
       <h1><span>${name}</span></h1>
       ${show.html}

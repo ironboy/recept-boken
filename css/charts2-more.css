@@ -43,11 +43,11 @@ td[class^="x"] {
   display: none;
 }
 
-.recept-details .epercent {
+.not-lpage .epercent {
   display: inline;
 }
 
-.recept-details .epercentAnimate {
+.not-lpage .epercentAnimate {
   display: none;
 }
 

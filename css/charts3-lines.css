@@ -86,9 +86,9 @@
   text-align: center;
 }
 
-.recept-details .hori-line,
-.recept-details .vert-line,
-.recept-details .e-line {
+.not-lpage .hori-line,
+.not-lpage .vert-line,
+.not-lpage .e-line {
   display: none;
 }
 

@@ -1,5 +1,8 @@
 function recept() {
-  return `<h2>Recept</h2>` + receptMd;
+  return /*html*/`<div class="receptlist not-lpage">
+    <h2>Recept</h2>
+    ${receptMd}
+   </div>`
 }
 
 window.showImageOnLoad = img => $(img).addClass('visible');
