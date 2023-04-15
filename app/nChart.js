@@ -24,10 +24,12 @@ function nChart({ makrokomponenter: m }, classNames = '', sort = true) {
       </div>
       <div class="e-line">
           <span>${m.energi.per100g}<br>kcal</span>
-          <img src="/images/ui/e-line.png">
+          <img src="/images/ui/e-line.png"
+            alt="Markering på vertikal linje">
       </div>
       <div class="hori-line">
-        <img src="/images/ui/hori-arrow-line.png">
+        <img src="/images/ui/hori-arrow-line.png"
+          alt="Horisontell linje med pilar">
         <span>
         ${energyFrom.length === 0 ? 'Ingen ' : ''}
         ${energyFrom.length === 1 ? 'Bara ' : ''}
@@ -35,7 +37,8 @@ function nChart({ makrokomponenter: m }, classNames = '', sort = true) {
         (</small>energi <small>%)</small></span>
       </div>
       <div class="vert-line">
-        <img src="/images/ui/vert-arrow-line.png">
+        <img src="/images/ui/vert-arrow-line.png"
+          alt="Vertikal linje med pil upptill">
         <span>Energitäthet</span>
       </div>
     </div>`, energyFrom.map(x => x.n), energyFrom

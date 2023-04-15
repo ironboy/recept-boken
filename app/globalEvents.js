@@ -1,4 +1,5 @@
 function globalEvents() {
+
   function resizer() {
     let x = $('.recept-in-list img');
     let y = $('.recept-in-list');
@@ -9,6 +10,16 @@ function globalEvents() {
     });
   }
   $(window).resize(resizer);
-  window.showImageOnLoad = img => $(img).addClass('visible') && resizer();
+
+  window.showImageOnLoad = img => {
+    let me = $(img);
+    me.addClass('visible').attr('alt',
+      (me.next().find('h3').text()
+        || me.next('h1').text()) +
+      (me.attr('src').includes('missing-image') ?
+        ' - bild saknas' : '')
+    ) && resizer();
+  }
+
   window.imageOnError = img => img.src = '/images/ui/missing-image.jpg';
 }
