@@ -5,6 +5,7 @@ function printEtikett() {
   let numberOf = +prompt('Antal etiketter', '4');
   if (!numberOf) { return; }
   let a = $('h2,h3,table:first,ol,hr').hide();
+  let nChart = $('.nChart').css({ marginBottom: 20 })
   let wDay = ['sön', 'mån', 'tis', 'ons', 'tor', 'fre', 'lör'][new Date(d).getDay()];
   wDay && (d = wDay + 'dag ' + d);
   let b = $(`<h3>Tillagad: ${d}<br><br></h3>`).insertAfter('h1');
@@ -18,6 +19,7 @@ function printEtikett() {
   $('body').removeClass('hiddenOnScreen');
   a.show();
   b.remove();
+  nChart.css({ marginBottom: '' });
   visibleImages.addClass('visible');
   for (let clone of clones) { clone.remove(); }
   dButton.click();
