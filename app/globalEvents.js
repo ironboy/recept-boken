@@ -2,6 +2,7 @@ function globalEvents() {
 
   function resizer() {
     let x = $('.recept-in-list img');
+    if (!x) { return; }
     let y = $('.recept-in-list');
     let noRound = x.outerHeight() === y.outerHeight() - 20;
     $('.recept-in-list img').css({

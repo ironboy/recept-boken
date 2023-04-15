@@ -1,5 +1,5 @@
 let debug = location.protocol !== 'https';
-let startTime = Date.now(), loadCounter = 0, _cl = 48;
+let startTime, loadCounter = 0, _cl = 48;
 let ndataObj, ndata, receptMd, receptDetails, niceLog, search = '';
 
 async function _main() {
@@ -19,6 +19,7 @@ async function _main() {
 
   let { scripts, styles } = await (await
     fetch('/json/scripts-and-styles.json')).json();
+  startTime = Date.now();
   window.scripts = scripts;
   const toLoad = [...scripts, ...styles.map(x => x + '.css')];
   toLoad.map(x => {
