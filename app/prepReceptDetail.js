@@ -1,8 +1,21 @@
-function prepReceptDetail(x) {
+function prepReceptDetail(x, data) {
   let dom = $('<div>' + x + '</div>');
   let ingredientKeys = [];
   dom.find('table').addClass('ingredients');
-  dom.find('h3:contains("Gör så här")').replaceWith('<hr><h2>Gör så här</h2>');
+  dom.find('th:nth-child(6), td:nth-child(6)').remove();
+  let names = [...$(dom).find('td:first-child')].map(x => $(x).text());
+  dom.find('h3:contains("Gör så här")').replaceWith(/*html*/`
+    <hr>
+      <h3>Pris per portion</h3>
+      <p>
+        ${data.pricesPerPortion.map((x, i) => `<span title="${names[i]}">
+          ${numFormatter(x, 2)}
+        </span>`).join(' + ')} = 
+        <b>${numFormatter(data.pricePerPortion, 0)} kr</b>
+      </p>
+    <hr>
+    <h2>Gör så här</h2>
+  `);
   dom.find('td:nth-child(2)').each(function () {
     let me = $(this);
     let td = me.prev();

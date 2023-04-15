@@ -9,7 +9,7 @@ function globalEvents() {
       'border-bottom': noRound ? 0 : ''
     });
     let lspan = $('.lheading');
-    lspan.data().setPos && lspan.data().setPos();
+    (lspan.data() || {}).setPos && lspan.data().setPos();
   }
   $(window).resize(resizer);
 

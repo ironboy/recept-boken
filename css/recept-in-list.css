@@ -30,6 +30,12 @@
   font-size: 18px;
 }
 
+@media screen and (max-width:950px) {
+  .sum-in-recept {
+    font-size: 1.8vw;
+  }
+}
+
 @media screen and (max-width:800px) {
   .sum-in-recept {
     font-size: 2.2vw;

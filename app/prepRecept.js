@@ -1,5 +1,6 @@
 function prepRecept(x) {
   receptDetails = {};
+  let content;
   let dom = $('<div>' + marked.parse(x) + '</div>');
   dom.find('*').removeAttr('id');
   let titles = [...dom.find('h2')].map(x => $(x).text()).sort();
@@ -7,7 +8,7 @@ function prepRecept(x) {
   html = '';
   for (let title of titles) {
     let slug = kebabify(title);
-    receptDetails[slug] = {
+    content = receptDetails[slug] = {
       name: title,
       rawHtml: domHtml
         .split(`<h2>${title}</h2>`)[1].split('<h2')[0],
@@ -16,13 +17,14 @@ function prepRecept(x) {
       // so save it in a function and run just before first display
       // in receptdetaljer.js
       beforeShow() {
-        this.html = prepReceptDetail(this.rawHtml);
+        this.html = prepReceptDetail(this.rawHtml, this);
         this.quantities1 = getQuantities(this.html, 2);
         this.quantities2 = getQuantities(this.html, 4);
         return true;
       }
     };
-    let makros = receptDetails[slug].makros = fastCalc(receptDetails[slug].rawHtml);
+    Object.assign(content, fastCalc(content.rawHtml));
+    let makros = content.makros;
     let x = nChart({ makrokomponenter: makros }, 'in-recept', false);
     let [chart, , info] = x;
     let joiner = '&nbsp;'.repeat(3) + '|' + '&nbsp;'.repeat(3);
@@ -39,6 +41,7 @@ function prepRecept(x) {
                 ${info.map(({ n, p }) => `${n[0].toUpperCase() + n.slice(1)}
                 ${numFormatter(makros[n].per100g, 0)}${makros[n].enhet}`).join(joiner)}
                 ${joiner} <b>${numFormatter(makros.energi.per100g, 0)} kcal</b>
+                ${joiner} Pris: ${numFormatter(content.pricePerPortion, 0)} kr
               </p>
             </div>
           </div>
