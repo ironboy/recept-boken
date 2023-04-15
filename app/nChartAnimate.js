@@ -22,7 +22,12 @@ async function nChartAnimate(name) {
   hVh -= vh < 17 && vh;
   let css = vh < 17 ? { bottom: '6.8vh' } : { top: '2vh' };
   $('.hori-line').css(css);
-  name && lspan.css({ bottom: 'calc(' + hVh + 'vh - 56px)' });
+  const setPos = () => name && lspan.css({
+    bottom: 'calc(' + hVh + 'vh - 56px'
+      + (lspan.height() > 80 ? ` ${css.top ? '-' : '+'} ${lspan.height() - 40}px` : '') + ')'
+  });
+  lspan.data({ setPos });
+  setPos();
   await sleep(1800);
   $('.hori-line').addClass('animate');
   await sleep(500);
