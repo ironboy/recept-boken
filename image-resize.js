@@ -5,6 +5,9 @@ const sharp = require('sharp');
 const fullSizePath = path.join(__dirname, 'images', 'full-size');
 const resizedPath = path.join(__dirname, 'images', 'resized');
 
+fs.rmSync(resizedPath, { recursive: true, force: true });
+fs.mkdirSync(resizedPath);
+
 for (let x of fs.readdirSync(fullSizePath)) {
   for (let resizeWidth of [200, 500, 1000, 1500, 2000]) {
     if (x.slice(-4) !== '.jpg') { continue; }
