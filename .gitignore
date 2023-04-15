@@ -1,5 +1,5 @@
 .DS_Store
-images/resized/*.jpg
+images/resized
 
 # Logs
 logs
