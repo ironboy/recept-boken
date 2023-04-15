@@ -5,10 +5,7 @@ function receptdetaljer() {
     return `<h2>404: Kan ej hitta detta recept!</h2>`;
   }
   show.beforeShow && show.beforeShow() && delete show.beforeShow;
-  let name = show.name.replace(/,/, '---first-comma---');
-  name = name.split('---first-comma---');
-  name.length > 1 && (name[1] = '<small>' + name[1] + '</small>');
-  name = name.join('<br>');
+  let name = nameStyler(show.name);
 
   addEvent('.printEtikett', 'click', printEtikett);
 

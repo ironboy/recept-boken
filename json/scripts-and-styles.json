@@ -29,7 +29,8 @@
     "sleep",
     "fastCalc",
     "loremGenerator",
-    "globalEvents"
+    "globalEvents",
+    "nameStyler"
   ],
   "styles": [
     "fonts",

@@ -1,7 +1,8 @@
 function fastCalc(html) {
-  let nslugs = getQuantities(html, 2, false);
-  let quantities = getQuantities(html, 5);
-  let pricesPerPortion = getQuantities(html, 6).map((x, i) =>
+  let dom = $('<div>' + html + '</div>');
+  let nslugs = getQuantities(dom, 2, false);
+  let quantities = getQuantities(dom, 5);
+  let pricesPerPortion = getQuantities(dom, 6).map((x, i) =>
     x * quantities[i] / 1000
   );
   let pricePerPortion = pricesPerPortion.reduce((a, c) => a + c, 0);

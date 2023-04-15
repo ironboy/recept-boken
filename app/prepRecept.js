@@ -33,12 +33,15 @@ function prepRecept(x) {
         <div class="recept-in-list">
           <img onerror="imageOnError(this)" onload="showImageOnLoad(this)" src="/images/resized/${slug}-w500.jpg">
           <div class="textbased">
-            <h3>${title}</h3>
+            <h3>${nameStyler(title)}</h3>
             <div class="recept-in-list-info">${loremGenerator(1)}</div>
             <div class="chart-in-recept-list">
               ${chart}
               <p class="sum-in-recept">
-                ${info.map(({ n, p }) => `${n[0].toUpperCase() + n.slice(1)}
+                ${info.slice(0, 3).map(({ n }) => `${n[0].toUpperCase() + n.slice(1)}
+                ${numFormatter(makros[n].per100g, 0)}${makros[n].enhet}`).join(joiner)}
+                <span class="big">${joiner}</span><span class="small"><br></span>
+                ${info.slice(3).map(({ n }) => `${n[0].toUpperCase() + n.slice(1)}
                 ${numFormatter(makros[n].per100g, 0)}${makros[n].enhet}`).join(joiner)}
                 ${joiner} <b>${numFormatter(makros.energi.per100g, 0)} kcal</b>
                 ${joiner} Pris: ${numFormatter(content.pricePerPortion, 0)} kr

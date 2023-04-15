@@ -32,6 +32,8 @@ th:last-child {
   top: -10px;
   -webkit-user-select: none;
   user-select: none;
+  border-radius: 10px;
+  background-color: #eee;
 }
 
 .showNutrionDetails,
@@ -41,6 +43,11 @@ th:last-child {
   padding: 3px 10px;
   color: #333;
   margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.printEtikett {
+  margin-top: -40px;
 }
 
 .recept-details ol {
@@ -63,7 +70,14 @@ th:last-child {
 
 .recept-details h1 {
   font-family: 'Cinzel Decorative';
+  line-height: 1.1;
   margin-bottom: 25px;
+}
+
+@media screen and (max-width:550px) {
+  .recept-details h1 {
+    font-size: 6vw;
+  }
 }
 
 .visible {
@@ -80,4 +94,17 @@ th:last-child {
 
 .receptlist .nChart .dia {
   height: 30px;
+}
+
+.price-per-portion {
+  margin-top: -0;
+  font-family: 'Patrick Hand SC';
+  font-size: 20px;
+  line-height: 2;
+}
+
+.price-per-portion b {
+  background-color: #dee9f7;
+  padding: 8px;
+  border-radius: 50%;
 }

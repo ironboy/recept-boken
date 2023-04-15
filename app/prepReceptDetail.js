@@ -7,11 +7,11 @@ function prepReceptDetail(x, data) {
   dom.find('h3:contains("Gör så här")').replaceWith(/*html*/`
     <hr>
       <h3>Pris per portion</h3>
-      <p>
+      <p class="price-per-portion">
         ${data.pricesPerPortion.map((x, i) => `<span title="${names[i]}">
           ${numFormatter(x, 2)}
         </span>`).join(' + ')} = 
-        <b>${numFormatter(data.pricePerPortion, 0)} kr</b>
+        <b>${numFormatter(data.pricePerPortion, 0)}&nbsp;kr</b>
       </p>
     <hr>
     <h2>Gör så här</h2>

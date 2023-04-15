@@ -54,9 +54,4 @@
   .chart-in-recept-list {
     width: calc(100% - 40px);
   }
-
-  .recept-in-list-info {
-    padding-bottom: 60px;
-  }
-
 }

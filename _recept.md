@@ -110,11 +110,11 @@
 1. Receptet inte klart än.
 
 
-## Gravad lax på råg
+## Hemgravad lax på dansk råg
 
 ### Ingredienser
 | Ingrediens              | Slug                           | Antal | Enhet                            | Vikt     |
 |-------------------------|--------------------------------|-------|----------------------------------|----------|
-| Osötat dansk rågbröd    | ragbrodfullkornosotatfibrerca5 |     1 | skiva                            |       40 |
+| Osötat dansk rågbröd    | ragbrodfullkornosotatfibrerca5 |     1 | skiv(a/or)                       |       40 |
 | Gravad lax              | laxgravad                      |   210 | gram, väg!                       |      210 |
 | Ägg                     | aggkonventionelltratt          |   1/2 | ägg                              | 1/2 * 63 |
