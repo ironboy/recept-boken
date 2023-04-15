@@ -1,9 +1,9 @@
-## Bräserade majskycklingfiléer, i Dijon- och korianderbaserad skysås med broccoliris
+## Bräserade kycklingfiléer, i dijonskysås med broccoliris
 
 ### Ingredienser
 | Ingrediens           | Slug                       | Antal | Enhet                       | Vikt      |    Pris/kg |
 |----------------------|----------------------------|-------|-----------------------------|-----------|------------|
-| Majskycklingbröst    | kycklingbrostfiluskinnra3  | 1     | stor(a) filé(er)            |       250 | 139        |
+| Kycklingbröst    | kycklingbrostfiluskinnra3  | 1     | stor(a) filé(er)            |       250 | 139        |
 | Smör                 | smorfett80                 | 10    | välvägd(a) gram             |        10 | 47.90*2    |
 | Broccoliris          | broccolifryst              | 1/4   | 500g-förpackning(ar)        |       125 | 19.90*2    |
 | Maizena-redning, ljus| potatismjolelpotatisgryn   | 1/2   | matsked(ar)                 |  1/2 * 10 | 14.90*4    |

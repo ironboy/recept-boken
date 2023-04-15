@@ -24,7 +24,7 @@ async function nChartAnimate(name) {
   $('.hori-line').css(css);
   const setPos = () => name && lspan.css({
     bottom: 'calc(' + hVh + 'vh - 56px'
-      + (lspan.height() > 80 ? ` ${css.top ? '-' : '+'} ${lspan.height() - 40}px` : '') + ')'
+      + (lspan.height() > 80 && css.top ? ` - ${lspan.height() - 40}px` : '') + ')'
   });
   lspan.data({ setPos });
   setPos();
