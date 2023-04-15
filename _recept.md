@@ -46,13 +46,13 @@
 ### Ingredienser
 | Ingrediens        | Slug                       | Antal | Enhet                           | Vikt     |
 |-------------------|----------------------------|-------|---------------------------------|----------|
-| Ägg               | aggkonventionelltratt      | 2     | ägg                             |      120 |
+| Ägg               | aggkonventionelltratt      | 1     | ägg                             |       63 |
 | Smör              | smorfett80                 | 5     | välvägd(a) gram                 |        5 |
-| Mager rökt kalkon | kalkonroktparsons          | 9     | tunna skiv(a/or)                | 9 * 5.71 |
+| Mager rökt kalkon | kalkonroktparsons          | 4     | tunna skiv(a/or)                | 4 * 5.71 |
 | Skogschampinjoner | champinjoner               | 75    | gram - väg dem                  |       75 |
-| Ost, 10%          | osthardostfett10           | 8     | skiv(a/or)                      |   8 * 12 |
+| Ost, 10%          | osthardostfett10           | 3     | skiv(a/or)                      |   3 * 12 |
 
-[initial portions to show](1)
+[initial portions to show](2)
 
 ### Gör så här
 1. Do it!
@@ -90,7 +90,7 @@
  
 
 ### Gör så här
-1. Receptet inte klart än
+1. Receptet inte klart än.
 
 
 ## Kycklingpasta Tricolore
@@ -105,3 +105,16 @@
 | Tomatpuré - dubbelkonc. | tomatpuredubbel                |   1   | matsked(ar)                      |       15 |  
 | Italiensk hårdost       | osthardostfett31               | 7.5   | välvägda gram                    |      7.5 |
 | Basilika                | basilikafarsk                  | 1/4   | kruk(a/or), eller bladpersilja...| 1/4 * 35 |
+
+### Gör så här
+1. Receptet inte klart än.
+
+
+## Gravad lax på råg
+
+### Ingredienser
+| Ingrediens              | Slug                           | Antal | Enhet                            | Vikt     |
+|-------------------------|--------------------------------|-------|----------------------------------|----------|
+| Osötat dansk rågbröd    | ragbrodfullkornosotatfibrerca5 |     1 | skiva                            |       40 |
+| Gravad lax              | laxgravad                      |   210 | gram, väg!                       |      210 |
+| Ägg                     | aggkonventionelltratt          |   1/2 | ägg                              | 1/2 * 63 |

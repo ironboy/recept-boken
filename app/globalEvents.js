@@ -2,13 +2,14 @@ function globalEvents() {
 
   function resizer() {
     let x = $('.recept-in-list img');
-    if (!x) { return; }
     let y = $('.recept-in-list');
     let noRound = x.outerHeight() === y.outerHeight() - 20;
     $('.recept-in-list img').css({
       'border-bottom-left-radius': noRound ? 0 : '',
       'border-bottom': noRound ? 0 : ''
     });
+    let lspan = $('.lheading');
+    lspan.data().setPos && lspan.data().setPos();
   }
   $(window).resize(resizer);
 
