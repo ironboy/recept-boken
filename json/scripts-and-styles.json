@@ -31,7 +31,8 @@
     "loremGenerator",
     "globalEvents",
     "nameStyler",
-    "priceCalcScale"
+    "priceCalcScale",
+    "globals"
   ],
   "styles": [
     "fonts",

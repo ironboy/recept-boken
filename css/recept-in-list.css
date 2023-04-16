@@ -37,6 +37,7 @@
   border-left: 5px solid #000;
   border-bottom: 5px solid #000;
   border-bottom-left-radius: 5px;
+  aspect-ratio: 500 / 329;
 }
 
 .sum-in-recept {

@@ -1,5 +1,5 @@
 let callLog = {};
-function callLogger() {
+function callLogger(scripts) {
   window.showCalls = (initial) => {
     if (!debug) { return; }
     let s = Object.entries(callLog).map(([key, val]) => (
@@ -10,7 +10,7 @@ function callLogger() {
     initial && console.log(x);
     return x;
   }
-  scripts.filter(x => x[0] !== '*').forEach(script => {
+  scripts.forEach(script => {
     if (script === 'callLogger') { return; }
     let func = window[script];
     window[script] = (...args) => {
