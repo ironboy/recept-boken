@@ -35,7 +35,7 @@ async function _main() {
     s.onload = () => {
       console.log(...niceLog(((loadCounter + 1) + '')
         .padStart(2, '0') + '. Loaded',
-        src, 'time', Date.now() - startTime, 'ms'));
+        src, Date.now() - startTime, 'ms'));
       ++loadCounter === toLoad.length && callLogger() && start();
     }
     document[css ? 'head' : 'body'].append(s);

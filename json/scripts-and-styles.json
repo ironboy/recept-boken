@@ -30,7 +30,8 @@
     "fastCalc",
     "loremGenerator",
     "globalEvents",
-    "nameStyler"
+    "nameStyler",
+    "priceCalcScale"
   ],
   "styles": [
     "fonts",

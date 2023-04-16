@@ -17,5 +17,8 @@ function receptdetaljer() {
       <br><br>
       <h2><div class="printEtikett">Skriv ut etiketter</div></h2>
     </div>
-  `, () => reCalculator(show)];
+  `, () => {
+    priceCalcScale();
+    reCalculator(show);
+  }];
 }

@@ -10,6 +10,7 @@ function globalEvents() {
     });
     let lspan = $('.lheading');
     (lspan.data() || {}).setPos && lspan.data().setPos();
+    priceCalcScale();
   }
   $(window).resize(resizer);
 
