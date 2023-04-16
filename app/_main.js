@@ -1,49 +1,46 @@
-const version = '1.2';
+let debug = location.protocol !== 'https';
+let startTime, loadCounter = 0, _cl = 48;
+let ndataObj, ndata, receptMd, receptDetails, niceLog, search = '';
 
 async function _main() {
-  console.log('App version', version);
-  const loader = async () => {
-    const loadText = async x => await (await fetch(x)).text();
-    const loadJson = async x => await (await fetch(x)).json();
-    let { scripts, styles } = await loadJson('/json/scripts-and-styles.json');
-    let orgScripts = scripts.filter(x => x[0] !== '*');
-    scripts = scripts.map(x => (x[0] === '*' ?
-      (x = x.slice(1)) && '/libs/' : '/app/') + x + '.js');
-    styles = styles.map(x => '/css/' + x + '.css');
-    let all = [...scripts, ...styles].map(x => loadText(x));
-    all = await Promise.all(all);
-    let l = scripts.length;
-    scripts = all.slice(0, l).join('\n\n') + `
-      callLogger(${JSON.stringify(orgScripts)}); 
-      start();
-    `;
-    styles = all.slice(l).join('\n\n');
-    scripts = btoa(unescape(encodeURIComponent(scripts)));
-    styles = btoa(unescape(encodeURIComponent(styles)));
-    Object.keys(localStorage).forEach(x =>
-      (x => x.indexOf('scripts') === 0
-        || x.indexOf('styles') === 0)
-      && delete localStorage[x]);
-    localStorage['scripts' + version] = scripts;
-    localStorage['styles' + version] = styles;
-    return [scripts, styles];
-  }
-  const loadFromLocalStorage = () => {
-    const [scripts, styles] = [
-      localStorage['scripts' + version],
-      localStorage['styles' + version]
-    ];
-    if (scripts && styles) { return [scripts, styles]; }
-  }
-  window.startTime = Date.now();
-  const [scripts, styles] = loadFromLocalStorage() || await loader();
-  const scriptEl = document.createElement('script');
-  scriptEl.src = 'data:text/javascript;base64,' + scripts;
-  document.body.append(scriptEl);
-  const styleEl = document.createElement('link');
-  styleEl.setAttribute('rel', 'stylesheet');
-  styleEl.setAttribute('href', 'data:text/css;base64,' + styles);
-  document.head.append(styleEl);
+  Array.prototype.toString = function () { return this.join(''); };
+  !debug && (console.log = () => { });
+  !debug && (console.table = () => { });
+  niceLog = (...a) => {
+    let l = a.reduce((a, c) => a + (c + '').length, a.length - 1);
+    try {
+      a[a.length - 3] && (a[a.length - 3] += ' '.repeat(_cl - l));
+    } catch (e) { }
+    return a;
+  };
+
+  console.log(...niceLog('RECEPT:  Booting up... :)', '', '© ironboy 2023'));
+  console.log(...niceLog('-'.repeat(_cl)));
+
+  let { scripts, styles } = await (await
+    fetch('/json/scripts-and-styles.json')).json();
+  scripts = scripts.filter(x => x !== 'globals');
+  startTime = Date.now();
+  window.scripts = scripts;
+  const toLoad = [...scripts, ...styles.map(x => x + '.css')];
+  toLoad.map(x => {
+    let startTime = Date.now();
+    let folder = '/app';
+    x[0] === '*' && (x = x.slice(1)) && (folder = '/libs');
+    let css = x.slice(-4) === '.css';
+    folder = css ? '/css' : folder;
+    let s = document.createElement(css ? 'link' : 'script');
+    css && (s.setAttribute('rel', 'stylesheet'));
+    let src = `${folder}/${x}${css ? '' : '.js'}`;
+    s.setAttribute(css ? 'href' : 'src', src);
+    s.onload = () => {
+      console.log(...niceLog(((loadCounter + 1) + '')
+        .padStart(2, '0') + '. Loaded',
+        src, Date.now() - startTime, 'ms'));
+      ++loadCounter === toLoad.length && callLogger(scripts) && start();
+    }
+    document[css ? 'head' : 'body'].append(s);
+  });
 }
 
 _main();
