@@ -1,9 +1,16 @@
+nav {
+  font-family: 'Lora';
+}
+
 nav a {
   text-decoration: none;
-  color: #000;
+  color: #eee;
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 15px;
   font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 nav a:first-child {
@@ -11,5 +18,5 @@ nav a:first-child {
 }
 
 nav a.active {
-  color: rgb(25, 32, 139);
+  color: #e9d159;
 }

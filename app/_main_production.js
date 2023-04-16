@@ -1,3 +1,7 @@
+// Maybe candidate for production?
+// different load process wthc loaclStorage caching
+// of script and styles
+
 const version = '1.2';
 
 async function _main() {

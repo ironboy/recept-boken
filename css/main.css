@@ -1,6 +1,6 @@
 main a {
   text-decoration: none;
-  color: rgb(25, 32, 139);
+  color: rgb(10 70 120);
   font-weight: bold;
 }
 
@@ -10,7 +10,7 @@ main a span {
 
 h1,
 h2 {
-  color: rgb(25, 32, 139);
+  color: rgb(10 70 120);
   line-height: 1.2;
 }
 

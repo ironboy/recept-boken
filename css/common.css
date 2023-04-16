@@ -3,13 +3,17 @@ body {
   font-family: 'Titillium Web';
 }
 
-header,
+header {
+  padding: 12px 20px;
+}
+
 main {
   padding: 20px;
 }
 
 header {
-  background-color: rgb(212, 239, 178);
+  background-color: #50789a;
+  /*rgb(212, 239, 178);*/
   position: sticky;
   z-index: 1;
   top: 0;
