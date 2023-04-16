@@ -108,3 +108,7 @@ th:last-child {
   padding: 8px;
   border-radius: 50%;
 }
+
+.green {
+  color: #047418;
+}

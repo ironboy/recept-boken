@@ -16,6 +16,13 @@ function prepReceptDetail(x, data) {
     <hr>
     <h2>Gör så här</h2>
   `);
+  addEvent('.price-per-portion span', 'mouseenter', function () {
+    $(`td:contains("${$(this).attr('title')}") a`).addClass('green');
+    $(this).addClass('green');
+  });
+  addEvent('.price-per-portion span', 'mouseleave', function () {
+    $('.green').removeClass('green');
+  });
   dom.find('td:nth-child(2)').each(function () {
     let me = $(this);
     let td = me.prev();
