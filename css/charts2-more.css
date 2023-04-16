@@ -70,7 +70,7 @@ td[class^="x"] {
   bottom: -46px;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:900px) {
   .lheading {
     width: 80%;
   }
