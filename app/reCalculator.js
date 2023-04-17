@@ -15,7 +15,7 @@ function reCalculator(show) {
       $('table').first().find('td:nth-child(' + i * 2 + ')').each(function () {
         let me = $(this);
         let tr = me.parent();
-        let transform = i === 1 ? fuzzyFraction : x => isNaN(x) ? '' : numFormatter(x, 0) + ' g';
+        let transform = i === 1 ? fuzzyFraction : x => isNaN(x) ? '' : numFormatter(x, 0) + '&nbsp;g';
         me.html(transform(q.shift()));
         if (i === 1 && !$('.plurals').length) {
           $('table').first().find('td:nth-child(3)').each(function () {
