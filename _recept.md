@@ -3,13 +3,16 @@
 ### Ingredienser
 | Ingrediens           | Slug                       | Antal | Enhet                       | Vikt      |    Pris/kg |
 |----------------------|----------------------------|-------|-----------------------------|-----------|------------|
-| Majskycklingbröst    | kycklingbrostfiluskinnra3  | 1     | stor(a) filé(er)            |       250 | 139        |
+| Majskycklingbröstfilé| majskycklingbrostfile3     | 1     | stor(a) filé(er)            |       250 | 139        |
 | Smör                 | smorfett80                 | 10    | välvägd(a) gram             |        10 | 47.90*2    |
 | Broccoliris          | broccolifryst              | 1/4   | 500g-förpackning(ar)        |       125 | 19.90*2    |
 | Maizena-redning, ljus| potatismjolelpotatisgryn   | 1/2   | matsked(ar)                 |  1/2 * 10 | 14.90*4    |
 | Dijonsenap           | senapsvensk                | 3/4   | matsked(ar)                 |  3/4 * 20 | 21.90/0.215|
 | Röd paprika          | paprikarod                 | 1/2   | medelstor(a) paprik(a/or)   |       110 | 69.90      |
 | Koriander            | basilikafarsk              | 1/4   | kruka                       |  1/4 * 35 | 21.90/0.035|
+
+### Priser
+Priser från april 2023. Rea på majskycklingfilén, 139 kr/kg.
 
 ### Gör så här
 1. Sätt en panna (gärna gjutjärn) på hög värme och smält smöret.
@@ -36,6 +39,9 @@
 | Zucchini          | squash                     | 1/4   | zucchini(er)                        |       90 | 12.90/0.36 |
 | Basilika          | basilikafarsk              | 1/4   | kruk(a/or), eller bladpersilja...   | 1/4 * 35 | 21.90/0.035|
 
+### Priser
+Priser från april 2023.
+
 ### Gör så här
 1. Do it!
 
@@ -54,6 +60,9 @@
 
 [initial portions to show](2)
 
+### Priser
+Priser från april 2023.
+
 ### Gör så här
 1. Do it!
 
@@ -68,6 +77,9 @@
 | Knippmorötter        | morot                      |    1  | relativt (liten/små) mor(ot/ötter)|       40 | 20*2      |
 | Maizena-redning, mörk| potatismjolelpotatisgryn   |  1/2  | matsked(ar)                       | 1/2 * 10 | 14.90*4   |
 | Bladpersilja         | persiljablad               | 1/4   | kruka                             | 1/4 * 35 |21.90/0.035|
+
+### Priser
+Priser från april 2023. Rea på fläskfilen, 69:90 kr/kg.
 
 ### Gör så här
 1. Receptet inte klart än
@@ -87,7 +99,9 @@
 | Blomkålsris       | blomkalfryst               | 1/4   | 500g-förpackning(ar)            |      125 | 19.90/0.5 |
 | Koriander         | basilikafarsk              | 1/4   | kruka                           | 1/4 * 35 |21.90/0.035|
 | Lime              | lime                       | 1/4   | saften från... pressa ner       | 1/4 * 15 | 79.73     |
- 
+
+### Priser
+Priser från april 2023. Rea på majskycklingfilén, 139 kr/kg.
 
 ### Gör så här
 1. Receptet inte klart än.
@@ -105,6 +119,9 @@
 | Tomatpuré - dubbelkonc. | tomatpuredubbel                |   1   | matsked(ar)                      |       15 | 69.50     | 
 | Italiensk hårdost       | osthardostfett31               | 7.5   | välvägda gram                    |      7.5 |11.90/0.04 |
 | Basilika                | basilikafarsk                  | 1/4   | kruk(a/or), eller bladpersilja...| 1/4 * 35 |21.90/0.035|
+
+### Priser
+Priser från april 2023. Rea på majskycklingfilén, 139 kr/kg.
 
 ### Gör så här
 1. Receptet inte klart än.

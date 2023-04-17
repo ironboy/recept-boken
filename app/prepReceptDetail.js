@@ -4,9 +4,20 @@ function prepReceptDetail(x, data) {
   dom.find('table').addClass('ingredients');
   dom.find('th:nth-child(6), td:nth-child(6)').remove();
   let names = [...$(dom).find('td:first-child')].map(x => $(x).text());
+
+  let prisSnackEl1 = dom.find('h3:contains("Priser")');
+  let prisSnackEl2 = dom.find('h3:contains("Priser") + p');
+  let prisSnack = prisSnackEl2.html();
+  prisSnackEl1.add(prisSnackEl2).remove();
+
   dom.find('h3:contains("Gör så här")').replaceWith(/*html*/`
     <hr>
-      <h3>Pris per portion</h3>
+      <h3 class="price-per-portion-h3">Pris per portion
+        ${!prisSnack ? '' : `<small class="prisSnack">${('<br><br>' + prisSnack
+      .replace(/(\.|,)/g, '$1<br>').replace(/ kr/g, '&nbsp;kr'))
+      .split('<br>').slice(0, -1).slice(-3).join('<br>')
+      }</small>`}
+      </h3>
       <p class="price-per-portion">
         ${data.pricesPerPortion.map((x, i) => `<span title="${names[i]}">
           ${numFormatter(x, 2)}
