@@ -38,13 +38,18 @@ function prepRecept(x) {
             <div class="chart-in-recept-list">
               ${chart}
               <p class="sum-in-recept">
-                ${info.slice(0, 3).map(({ n }) => `${n[0].toUpperCase() + n.slice(1)}
-                ${numFormatter(makros[n].per100g, 0)}${makros[n].enhet}`).join(joiner)}
-                <span class="big">${joiner}</span><span class="small"><br></span>
-                ${info.slice(3).map(({ n }) => `${n[0].toUpperCase() + n.slice(1)}
-                ${numFormatter(makros[n].per100g, 0)}${makros[n].enhet}`).join(joiner)}
-                ${joiner} <b>${numFormatter(makros.energi.per100g, 0)} kcal</b>
-                ${joiner} Pris: ${numFormatter(content.pricePerPortion, 0)} kr
+                <span>
+                  ${info.slice(0, 3).map(({ n }) => `${n[0].toUpperCase() + n.slice(1)}
+                  ${numFormatter(makros[n].per100g, 0)}${makros[n].enhet}`).join(joiner)}
+                </span>
+                <span class="big">${joiner}</span>
+                <span class="small"><br></span>
+                <span>
+                  ${info.slice(3).map(({ n }) => `${n[0].toUpperCase() + n.slice(1)}
+                  ${numFormatter(makros[n].per100g, 0)}${makros[n].enhet}`).join(joiner)}
+                  ${joiner} ${numFormatter(makros.energi.per100g, 0)} kcal
+                  ${joiner} Pris: ${numFormatter(content.pricePerPortion, 0)} kr
+                </span>
               </p>
             </div>
           </div>

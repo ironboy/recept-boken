@@ -10,7 +10,7 @@ function recept() {
     }));
   recept.search = () => {
     let s = searchRecept.toLowerCase();
-    let reg = new RegExp('(' + s + ')', 'i');
+    let reg = new RegExp('(' + s + ')', 'gi');
     $('.receptlist>a').hide();
     els.forEach(({ el, text }) => {
       text = text.replace(reg, '<span class="searched">$1</span>');
