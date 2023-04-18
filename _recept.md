@@ -92,7 +92,7 @@ Priser från april 2023. Rea på fläskfilen, 69:90 kr/kg.
 | Ingrediens        | Slug                       | Antal | Enhet                           | Vikt     | Pris/kg   |
 |-------------------|----------------------------|-------|---------------------------------|----------|-----------|
 | Kycklingmage      | kycklingmagera             | 225   | gram                            |      225 | 26.90/0.45|
-| Majskycklingbröst | kycklingbrostfiluskinnra3  | 1/4   | stor(a) filé(er)                |  250 / 4 | 139       |
+| Majskycklingbröst | majskycklingbrostfile3  | 1/4   | stor(a) filé(er)                |  250 / 4 | 139       |
 | Olivolja          | olivoljaextrajungfruolja   | 2/3   | matsked(ar) - mät noga          | 2/3*13.8 | 119/0.9   |
 | Oystersås         | teriyakisas                | 1/2   | matskedar                       |      7.5 | 58.63     |
 | Schalottenlök     | syltlokinlagd              | 1     | schalottenlök                   |       30 | 38.90     |
@@ -112,7 +112,7 @@ Priser från april 2023. Rea på majskycklingfilén, 139 kr/kg.
 ### Ingredienser
 | Ingrediens              | Slug                           | Antal | Enhet                            | Vikt     | Pris/kg   |
 |-------------------------|--------------------------------|-------|----------------------------------|----------|-----------|
-| Majskycklingbröst       | kycklingbrostfiluskinnra3      | 3/4   | stor(a) filé(er)                 |    750/4 | 139       |
+| Majskycklingbröst       | majskycklingbrostfile3      | 3/4   | stor(a) filé(er)                 |    750/4 | 139       |
 | Olivolja                | olivoljaextrajungfruolja       | 1/3   | matsked(ar) - mät noga!          | 1/3*13.8 | 119/0.9   |
 | Fusilli Tricolore       | pasta                          | 12/4  | gram, väg!                       |    150/4 | 9.90/0.5  | 
 | Körsbärstomater         | smatomaterrodatypkorsbarstomat | 1/4   | burk(ar), 400g per burk          |      100 | 12.90/0.4 |

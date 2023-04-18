@@ -1,3 +1,11 @@
+html,
+body {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
 main a {
   text-decoration: none;
   color: rgb(10 70 120);
@@ -12,6 +20,10 @@ h1,
 h2 {
   color: rgb(10 70 120);
   line-height: 1.2;
+}
+
+h2 {
+  font-size: 27px;
 }
 
 main {
