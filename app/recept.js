@@ -1,13 +1,5 @@
 function recept() {
   let els;
-  let r = receptMd
-    .split('<a href')
-    .slice(1)
-    .map(x => '<a href' + x)
-    .map((x, index) => ({
-      index,
-      text: $(x).find('.textbased').text().trim().toLowerCase()
-    }));
   recept.search = () => {
     let s = searchRecept.toLowerCase();
     let reg = new RegExp('(' + s + ')', 'gi');
