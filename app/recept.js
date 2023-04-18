@@ -14,7 +14,6 @@ function recept() {
     $('.receptlist>a').hide();
     els.forEach(({ el, text }) => {
       text = text.replace(reg, '<span class="searched">$1</span>');
-      console.log(reg, text)
       el.html() !== text && el.html(text);
       text.includes('<span') && el.parents('.receptlist>a').show();
     })
