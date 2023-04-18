@@ -1,4 +1,14 @@
 function navigate() {
+  addEvent('[name="search"]', 'keyup', () => {
+    let livs = location.hash === '#livsmedelslista';
+    let focused = $('[name="search"]:focus');
+    let val = focused.val();
+    $('[name="search"]').not(focused).val(val);
+    livs && (searchLivsmedel = val);
+    !livs && (searchRecept = val);
+    livs && $('.livsmedel').html(livsmedelslista.makeList());
+    !livs && recept.search();
+  });
   let startTime = new Date();
   $('main').length || $('body').append('<main/>');
   let x = location.hash.slice(1).split('/')[0];
