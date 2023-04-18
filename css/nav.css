@@ -1,5 +1,26 @@
+header {
+  padding: 12px 20px;
+}
+
+header {
+  background-color: #50789a;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+footer {
+  background-color: #50789a;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+
 nav {
   font-family: 'Lora';
+  margin-bottom: 4px;
 }
 
 nav a {
@@ -19,4 +40,41 @@ nav a:first-child {
 
 nav a.active {
   color: #e9d159;
+}
+
+nav input[type="text"] {
+  float: right;
+  width: 30%;
+  display: none;
+}
+
+.searchable nav input[type="text"] {
+  display: block;
+}
+
+footer nav {
+  padding: 14px 20px 0 20px;
+}
+
+nav a {
+  padding-top: 3px;
+}
+
+footer input[type="text"] {
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+@media screen and (max-width:700px) {
+  header nav input {
+    display: none !important;
+  }
+
+  main {
+    margin-bottom: 50px !important;
+  }
+
+  .searchable footer {
+    display: block;
+  }
 }

@@ -3,20 +3,8 @@ body {
   font-family: 'Titillium Web';
 }
 
-header {
-  padding: 12px 20px;
-}
-
 main {
   padding: 20px;
-}
-
-header {
-  background-color: #50789a;
-  /*rgb(212, 239, 178);*/
-  position: sticky;
-  z-index: 1;
-  top: 0;
 }
 
 main>*:first-child {

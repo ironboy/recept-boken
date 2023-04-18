@@ -11,6 +11,13 @@ function navigate() {
   runAfter();
   console.log(...niceLog('Render:', x, Date.now() - startTime, 'ms'));
   $('nav a').removeClass('active');
+  if (x === 'recept' || x == 'livsmedelslista') {
+    $('body').addClass('searchable');
+    $('[name="search"]').val(x === 'recept' ? searchRecept : searchLivsmedel);
+  }
+  else {
+    $('body').removeClass('searchable')
+  }
   x === 'livsmedelsdetaljer' && (x = 'livsmedelslista');
   x === 'receptdetaljer' && (x = 'recept');
   $(`nav a[href="#${x}"]`).addClass('active');
