@@ -1,17 +1,30 @@
 function recept() {
-  let r = receptMd.split('<a href').slice(1).map(x => '<a href' + x);
-  r = r.map(x => ({
-    orgHtml: x,
-    html: x,
-    text: $(x).text().trim().toLowerCase()
-  }));
+  let els;
+  let r = receptMd
+    .split('<a href')
+    .slice(1)
+    .map(x => '<a href' + x)
+    .map((x, index) => ({
+      index,
+      text: $(x).find('.textbased').text().trim().toLowerCase()
+    }));
   recept.search = () => {
-    $('.receptlist').html(r.
-      filter(x => x.text.includes(searchRecept.toLowerCase()))
-      .map(x => x.html)
-    );
+    let s = searchRecept.toLowerCase();
+    let reg = new RegExp('(' + s + ')', 'i');
+    $('.receptlist>a').hide();
+    els.forEach(({ el, text }) => {
+      text = text.replace(reg, '<span class="searched">$1</span>');
+      console.log(reg, text)
+      el.html() !== text && el.html(text);
+      text.includes('<span') && el.parents('.receptlist>a').show();
+    })
   }
-  return /*html*/`<div class="receptlist not-lpage">
-    ${r.map(x => x.html)}
-  </div>`;
+  return [
+      /*html*/`<div class="receptlist not-lpage">${receptMd}</div>`,
+    () => {
+      els = [...$('.receptlist *').filter(function () {
+        return $(this).children().length === 0 && $(this).text();
+      })].map(x => ({ el: $(x), text: $(x).text() }));
+    }
+  ];
 }

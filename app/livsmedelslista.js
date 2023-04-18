@@ -8,7 +8,8 @@ function livsmedelslista() {
     return listdata
       .map(x => /*html*/`<p>
       <a class="cap" href="#livsmedelsdetaljer/${x.slug}">
-        ${x.namn.toLowerCase().split(s).join('<span>' + s + '</span>')}
+        ${x.namn.toLowerCase().split(s).join(
+        '<span class="searched">' + s + '</span>')}
       </a>
     </p>`);
   }
