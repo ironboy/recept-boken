@@ -143,3 +143,8 @@ th:last-child {
     display: none;
   }
 }
+
+table.ingredients td,
+table.ingredients th {
+  height: 27px;
+}
