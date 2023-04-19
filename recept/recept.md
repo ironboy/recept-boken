@@ -50,13 +50,13 @@ Priser från april 2023.
 ## Kalkon- och svampomelett
 
 ### Ingredienser
-| Ingrediens        | Slug                  | Antal | Enhet            |     Vikt |  |
-|-------------------|-----------------------|-------|------------------|----------|--|
-| Ägg               | aggkonventionelltratt |     1 | ägg              |       63 |  |
-| Smör              | smorfett80            |     5 | välvägd(a) gram  |        5 |  |
-| Mager rökt kalkon | kalkonroktparsons     |     4 | tunna skiv(a/or) | 4 * 5.71 |  |
-| Skogschampinjoner | champinjoner          |    75 | gram - väg dem   |       75 |  |
-| Ost, 10%          | osthardostfett10      |     3 | skiv(a/or)       |   3 * 12 |  |
+| Ingrediens        | Slug                  | Antal | Enhet            |     Vikt | Pris/kg |
+|-------------------|-----------------------|-------|------------------|----------|---------|
+| Ägg               | aggkonventionelltratt |     1 | ägg              |       63 |         |
+| Smör              | smorfett80            |     5 | välvägd(a) gram  |        5 |         |
+| Mager rökt kalkon | kalkonroktparsons     |     4 | tunna skiv(a/or) | 4 * 5.71 |         |
+| Skogschampinjoner | champinjoner          |    75 | gram - väg dem   |       75 |         |
+| Ost, 10%          | osthardostfett10      |     3 | skiv(a/or)       |   3 * 12 |         |
 
 [initial portions to show](2)
 
@@ -130,8 +130,8 @@ Priser från april 2023. Rea på majskycklingfilén, 139 kr/kg.
 ## Hemgravad lax på dansk råg
 
 ### Ingredienser
-| Ingrediens           | Slug                           | Antal | Enhet      |     Vikt |  |
-|----------------------|--------------------------------|-------|------------|----------|--|
-| Osötat dansk rågbröd | ragbrodfullkornosotatfibrerca5 |     1 | skiv(a/or) |       40 |  |
-| Gravad lax           | laxgravad                      |   210 | gram, väg! |      210 |  |
-| Ägg                  | aggkonventionelltratt          |   1/2 | ägg        | 1/2 * 63 |  |
+| Ingrediens           | Slug                           | Antal | Enhet      |     Vikt | Pris/kg |
+|----------------------|--------------------------------|-------|------------|----------|---------|
+| Osötat dansk rågbröd | ragbrodfullkornosotatfibrerca5 |     1 | skiv(a/or) |       40 |         |
+| Gravad lax           | laxgravad                      |   210 | gram, väg! |      210 |         |
+| Ägg                  | aggkonventionelltratt          |   1/2 | ägg        | 1/2 * 63 |         |

@@ -30,6 +30,7 @@ function fixTables() {
       row.includes('---') || table.push(
         [...row.split('|').slice(1, -1).map(x => x.trim()), ...[...new Array(6)].map(x => '')].slice(0, 6)
       );
+      table[0] = 'Ingrediens, Slug, Antal, Enhet, Vikt, Pris/kg'.split(', ');
     }
     else {
       rows.push(row);
