@@ -59,6 +59,8 @@ function fixTables() {
     return table.join('\n');
   });
   $('textarea').val(rows.join(windows ? '\r\n' : '\n').replace(/---table/g, () => tables.shift()));
+  saved === $('textarea').val()
+    && $('div:last-of-type').addClass('disabled');
 }
 
 function fixNumbering() {

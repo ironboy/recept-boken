@@ -17,9 +17,7 @@ app.post('/api/md', (req, res) => {
   for (let i = 0; i < a.length - 5; i++) { // keep 5 backups, delete older
     fs.rmSync(path.join(backupDir, a[i]));
   }
-  console.log(req.body.md)
   let b = fs.writeFileSync(thePath, req.body.md, 'utf-8');
-  console.log(b);
   res.json({ ok: true });
 });
 
