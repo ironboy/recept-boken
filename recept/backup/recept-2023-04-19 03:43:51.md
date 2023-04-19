@@ -9,7 +9,7 @@
 | Maizena-redning, ljus | potatismjolelpotatisgryn |   1/2 | matsked(ar)               | 1/2 * 10 |     14.90*4 |
 | Dijonsenap            | senapsvensk              |   3/4 | matsked(ar)               | 3/4 * 20 | 21.90/0.215 |
 | Röd paprika           | paprikarod               |   1/2 | medelstor(a) paprik(a/or) |      110 |       69.90 |
-| Koriander             | basilikafarsk            |   1/4 | kruka                     | 1/4 * 35 | 21.90/0.035 |
+| Koriander             | basilikafarsk            |   1/4 | kruk(a/or)                | 1/4 * 35 | 21.90/0.035 |
 
 ### Priser
 Priser från april 2023. Rea på majskycklingfilén, 139 kr/kg.
@@ -76,7 +76,7 @@ Priser från april 2023.
 | Smör                  | smorfett80               |    10 | välvägd(a) gram                    |       10 |     47.90*2 |
 | Knippmorötter         | morot                    |     1 | relativt (liten/små) mor(ot/ötter) |       40 |        20*2 |
 | Maizena-redning, mörk | potatismjolelpotatisgryn |   1/2 | matsked(ar)                        | 1/2 * 10 |     14.90*4 |
-| Bladpersilja          | persiljablad             |   1/4 | kruka                              | 1/4 * 35 | 21.90/0.035 |
+| Bladpersilja          | persiljablad             |   1/4 | kruk(a/or)                         | 1/4 * 35 | 21.90/0.035 |
 
 ### Priser
 Priser från april 2023. Rea på fläskfilen, 69:90 kr/kg.
@@ -97,7 +97,7 @@ Priser från april 2023. Rea på fläskfilen, 69:90 kr/kg.
 | Oystersås         | teriyakisas              |   1/2 | matskedar                 |      7.5 |       58.63 |
 | Schalottenlök     | syltlokinlagd            |     1 | schalottenlök             |       30 |       38.90 |
 | Blomkålsris       | blomkalfryst             |   1/4 | 500g-förpackning(ar)      |      125 |   19.90/0.5 |
-| Koriander         | basilikafarsk            |   1/4 | kruka                     | 1/4 * 35 | 21.90/0.035 |
+| Koriander         | basilikafarsk            |   1/4 | kruk(a/or)                | 1/4 * 35 | 21.90/0.035 |
 | Lime              | lime                     |   1/4 | saften från... pressa ner | 1/4 * 15 |       79.73 |
 
 ### Priser
