@@ -36,3 +36,11 @@ main.recept {
   padding: 0;
   border-top: 20px solid #000;
 }
+
+.livsmedelslista a {
+  font-size: 20px;
+}
+
+body.receptlista {
+  background-color: #000;
+}

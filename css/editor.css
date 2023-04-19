@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inconsolata';
+}
+
+textarea {
+  outline: none;
+  border: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  height: calc(100vh - 60px);
+  width: calc(100vw - 60px);
+  margin: 20px;
+  padding: 10px;
+}
+
+div {
+  position: fixed;
+  top: 10px;
+  right: 100px;
+  cursor: pointer;
+  background-color: black;
+}
+
+div:last-of-type {
+  right: 30px;
+}
+
+.disabled {
+  opacity: 0.5;
+}

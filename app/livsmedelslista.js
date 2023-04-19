@@ -14,7 +14,6 @@ function livsmedelslista() {
     </p>`);
   }
   return /*html*/`
-    <h2>Livsmedel</h2>
     <div class="livsmedel">${livsmedelslista.makeList()}</div>
   `;
 }

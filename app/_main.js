@@ -1,7 +1,7 @@
 let debug = location.protocol !== 'https';
 let startTime, loadCounter = 0, _cl = 48;
 let ndataObj, ndata, receptMd, receptDetails, niceLog;
-let searchLivsmedel = '', searchRecept = '';
+let searchLivsmedel = '', searchRecept = '', rawMd;
 
 async function _main() {
   Array.prototype.toString = function () { return this.join(''); };

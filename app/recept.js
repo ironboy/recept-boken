@@ -16,6 +16,7 @@ function recept() {
       els = [...$('.receptlist *').filter(function () {
         return $(this).children().length === 0 && $(this).text();
       })].map(x => ({ el: $(x), text: $(x).text() }));
+      recept.search();
     }
   ];
 }

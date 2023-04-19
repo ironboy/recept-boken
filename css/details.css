@@ -51,7 +51,7 @@ th:last-child {
 
 .recept-details ol {
   font-family: 'Lora';
-  font-size: 115%;
+  font-size: 110%;
 }
 
 .recept-details ol li {
@@ -118,11 +118,9 @@ th:last-child {
   color: #047418;
 }
 
-
 .price-per-portion-h3 {
   margin-bottom: 3px;
 }
-
 
 .prisSnack {
   float: right;

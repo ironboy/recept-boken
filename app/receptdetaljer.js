@@ -11,7 +11,7 @@ function receptdetaljer() {
 
   return [/*html*/`
     <div class="recept-details not-lpage">
-      <img onerror="imageOnError(this)" onload="showImageOnLoad(this)" src="/images/resized/${slug}-w2000.jpg">
+      <img class="visible" onerror="imageOnError(this)" onload="showImageOnLoad(this)" src="/images/resized/${slug}-w2000.jpg">
       <h1><span>${name}</span></h1>
       ${show.html}
       <br><br>

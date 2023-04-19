@@ -31,7 +31,7 @@ function prepRecept(x) {
     html += /*html*/`
       <a href="#receptdetaljer/${slug}">
         <div class="recept-in-list">
-          <img onerror="imageOnError(this)" onload="showImageOnLoad(this)" src="/images/resized/${slug}-w500.jpg">
+          <img class="visible" onerror="imageOnError(this)" onload="showImageOnLoad(this)" src="/images/resized/${slug}-w500.jpg">
           <div class="textbased">
             <h3>${nameStyler(title)}</h3>
             <div class="recept-in-list-info">${loremGenerator(1)}</div>
