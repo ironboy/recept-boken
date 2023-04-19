@@ -1,4 +1,4 @@
-## Bräserade majskycklingfiléer, i dijonskysås med broccoliri
+## Bräserade majskycklingfiléer, i dijonskysås med broccoliris
 
 ### Ingredienser
 | Ingrediens            | Slug                     | Antal | Enhet                     |     Vikt |     Pris/kg |
