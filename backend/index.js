@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require("child_process");
 const app = express();
 
 app.use(express.static(path.join(__dirname, '../')));
@@ -18,6 +19,7 @@ app.post('/api/md', (req, res) => {
     fs.rmSync(path.join(backupDir, a[i]));
   }
   let b = fs.writeFileSync(thePath, req.body.md, 'utf-8');
+  execSync('git add . && git commit -am "Update recept.md" && git push');
   res.json({ ok: true });
 });
 
