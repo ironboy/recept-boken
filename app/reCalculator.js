@@ -4,11 +4,15 @@ function reCalculator(show) {
     <span class="portionChange">+</span>
     <span class="portionChange">-</span>
   `);
-  let portionNo = +($('a:contains("initial portions to show")').attr('href') || 4);
+  !window.portionsToShow && (window.portionsToShow = {});
+  window.portionsToShow[location.hash] = window.portionsToShow[location.hash] ||
+    +($('a:contains("initial portions to show")').attr('href') || 4);
+  let portionNo = window.portionsToShow[location.hash];
   $('.portionChange').on('click', function () {
     let me = $(this), add = me.text() === '+' ? 1 : -1;
     (add < 0 && portionNo > 1 || add > 0 && portionNo < 50)
       && (portionNo += add);
+    window.portionsToShow[location.hash] = portionNo;
     $('.portionNo').text(portionNo + ' portion' + (portionNo > 1 ? 'er' : ''));
     for (let i = 1; i <= 2; i++) {
       let q = show['quantities' + i].map(x => x * portionNo), qCopy = [...q];
