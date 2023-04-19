@@ -8,6 +8,7 @@ body {
 }
 
 textarea {
+  font-family: 'Inconsolata';
   outline: none;
   border: 0;
   background-color: #000;
