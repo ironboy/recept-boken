@@ -4,8 +4,18 @@ function prepRecept(x) {
   let dom = $('<div>' + marked.parse(x) + '</div>');
   dom.find('*').removeAttr('id');
   let titles = [...dom.find('h2')].map(x => $(x).text()).sort();
+  let introTexts = titles.map(x => {
+    let el = dom.find(`h2:contains("${x}")`), text = '';
+    do {
+      el = el.next('p');
+      text += el.text();
+    } while (el.filter('p').length);
+    text = text.split(' ').slice(0, 50).join(' ').replace(/\W*$/g, '');
+    return text ? text + '…' : '';
+  });
   let domHtml = dom.html();
   html = '';
+  let counter = 0;
   for (let title of titles) {
     let slug = kebabify(title);
     content = receptDetails[slug] = {
@@ -34,7 +44,7 @@ function prepRecept(x) {
           <img class="visible" onerror="imageOnError(this)" onload="showImageOnLoad(this)" src="/images/resized/${slug}-w500.jpg">
           <div class="textbased">
             <h3>${nameStyler(title)}</h3>
-            <div class="recept-in-list-info">${loremGenerator(1)}</div>
+            <div class="recept-in-list-info">${introTexts[counter++] || loremGenerator(1)}</div>
             <div class="chart-in-recept-list">
               ${chart}
               <p class="sum-in-recept">
