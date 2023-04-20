@@ -65,8 +65,9 @@ function fixTables() {
 }
 
 function fixNumbering() {
+  return;// not working yet
   let windows = $('textarea').val().includes('\r');
-  let x = $('textarea').val().split('\r').join('').split('\n');
+  let x = $('textarea').val().split('\r').join('').split('\n\n');
   let lastRowMatched, counter, xCounter = 0;
   for (let row of x) {
     let match = row.match(/^\d{1,}\./g);
@@ -80,7 +81,7 @@ function fixNumbering() {
     lastRowMatched = match;
     xCounter++;
   }
-  $('textarea').val(x.join(windows ? '\r\n' : '\n'));
+  $('textarea').val(x.join(windows ? '\r\n\r\n' : '\n\n'));
 }
 
 async function save() {

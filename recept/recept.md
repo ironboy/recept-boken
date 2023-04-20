@@ -31,7 +31,7 @@ sänka värmen något. Sedan låter du dem bräseras i vattnet i cirka 10 minute
 kolla att den är genomstekt. Fördelen med bräsering är att kycklingen inte blir torr så lätt. Kör på relativt hög värme, 
 vattnet kommer att koka ner/reduceras. Går det för fort - häll på lite mer!
 3. När allt börjar bli klart, ner med vitlök pressad eller finhackad, en klyfta per filé... Du kan plocka bort kycklingen nu.
-2. Kvar har du vätska, ca en halv till en deciliter per filé är lagom - i med Maizena-redning och dijonsenap, låt koka upp snabbt och rör 
+4. Kvar har du vätska, ca en halv till en deciliter per filé är lagom - i med Maizena-redning och dijonsenap, låt koka upp snabbt och rör 
 så att det inte klumpar sig...
 5. Broccoliriset då? Koka upp försiktigt, tillsätt lite salt, peppar och vitlök om du vill. Vill du att det ska smaka mer kan
 du lägga till på lite paprika- eller chilipulver också. Och sedan i med lite färsk grovhackad röd paprika.
