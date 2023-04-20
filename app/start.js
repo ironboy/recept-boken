@@ -40,6 +40,7 @@ async function start(md) {
     }
   }
   rawMd = md || await (await fetch('/recept/recept.md')).text();
+  rawMd = rawMd.replace(/"/g, '”');
   !md && console.log('Loading', '/_recept.md');
   !md && console.log(...niceLog('Data load time:', Date.now() - startTime, 'ms'));
   !md && console.log('-'.repeat(_cl));

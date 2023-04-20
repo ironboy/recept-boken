@@ -59,8 +59,10 @@ th:last-child {
 }
 
 @media screen and (max-width:500px) {
-  .recept-details ol li {
-    font-size: 80%;
+
+  .recept-details ol li,
+  .receptdetaljer h1~p {
+    font-size: 95%;
   }
 }
 

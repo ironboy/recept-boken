@@ -1,6 +1,6 @@
 ## Bräserade majskycklingfiléer, i dijonskysås med broccoliris
 
-Majskyckling smakar lite extra, men är dyrare än "vanlig" kyckling. Den går utmärkt att byta mot vanliga kycklingbröst om du vill.
+Majskyckling smakar lite extra, men är dyrare än ”vanlig” kyckling. Den går utmärkt att byta mot vanliga kycklingbröst om du vill.
 Använd dock helst färska sådana. Frysta med vatten insprutat är mycket svårare att ge fin stekyta och smakar gummiaktigt. 
 
 Fördelen med bräsering är att kycklingen inte blir torr så lätt, vilket annars är faran när man lagar kycklingbröst.
@@ -104,6 +104,12 @@ Priser från april 2023. Rea på fläskfilen, 69:90 kr/kg.
 
 
 ## Burmesisk currygryta, på två sorters kyckling med blomkålsris
+
+Tja, hemligheten här är väl – kycklingmagarna! Kronfågel gör misstaget att försöka "dölja" att det tar tid att
+använda dem rätt. De har "3-minutersrecept", men jag lovar då smakar/känns "studsiga". Tricket är istället att
+koka dem – länge (2 timmar)...
+
+Magiskt är att kycklingmagar efter att ha blivit långkokade smakar som kycklinglår, mörkt kycklingkött, dvs. supergott.
 
 ### Ingredienser
 | Ingrediens        | Slug                     | Antal | Enhet                     |     Vikt |     Pris/kg |
