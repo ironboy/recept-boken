@@ -110,6 +110,7 @@ använda dem rätt. De har ”3-minutersrecept”, men jag lovar då smakar/kän
 koka dem – länge (2 timmar)...
 
 Magiskt är att kycklingmagar efter att ha blivit långkokade smakar som kycklinglår, mörkt kycklingkött, dvs. supergott.
+Och till halva priset. I varje fall om du stoppar dem i en kryddrik gryta. Så det gör vi.
 
 ### Ingredienser
 | Ingrediens        | Slug                     | Antal | Enhet                     |     Vikt |     Pris/kg |
