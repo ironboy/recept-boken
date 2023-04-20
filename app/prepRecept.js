@@ -11,7 +11,7 @@ function prepRecept(x) {
       text += el.text();
     } while (el.filter('p').length);
     text = text.split(' ').slice(0, 50).join(' ').replace(/\W*$/g, '');
-    return text ? text + '…' : '';
+    return (text || loremGenerator(1)) + '…';
   });
   let domHtml = dom.html();
   html = '';
@@ -44,7 +44,7 @@ function prepRecept(x) {
           <img class="visible" onerror="imageOnError(this)" onload="showImageOnLoad(this)" src="/images/resized/${slug}-w500.jpg">
           <div class="textbased">
             <h3>${nameStyler(title)}</h3>
-            <div class="recept-in-list-info">${introTexts[counter++] || loremGenerator(1)}</div>
+            <div class="recept-in-list-info">${introTexts[counter++]}</div>
             <div class="chart-in-recept-list">
               ${chart}
               <p class="sum-in-recept">
