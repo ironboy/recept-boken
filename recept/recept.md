@@ -1,6 +1,6 @@
 ## Bräserade majskycklingfiléer, i dijonskysås med broccoliris
 
-Majskyckling smakar lite extra, men är dyrare än 'vanlig' kyckling. Den går utmärkt att byta mot vanliga kycklingbröst om du vill.
+Majskyckling smakar lite extra, men är dyrare än "vanlig" kyckling. Den går utmärkt att byta mot vanliga kycklingbröst om du vill.
 Använd dock helst färska sådana. Frysta med vatten insprutat är mycket svårare att ge fin stekyta och smakar gummiaktigt. 
 
 Fördelen med bräsering är att kycklingen inte blir torr så lätt, vilket annars är faran när man lagar kycklingbröst.
