@@ -44,3 +44,8 @@ main.recept {
 body.receptlista {
   background-color: #000;
 }
+
+.receptdetaljer h1~p {
+  font-family: 'Lora';
+  font-size: 115%;
+}

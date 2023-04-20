@@ -1,11 +1,12 @@
 ## Bräserade majskycklingfiléer, i dijonskysås med broccoliris
 
 Majskyckling smakar lite extra, men är dyrare än 'vanlig' kyckling. Den går utmärkt att byta mot vanliga kycklingbröst om du vill.
-Använd dock helst färska sådana. Frysta med vatten insprutat för den är mycket svårare att få fin stekyta på och 
-smakar gummiaktigt...
+Använd dock helst färska sådana. Frysta med vatten insprutat är mycket svårare att ge fin stekyta och smakar gummiaktigt. 
 
-Och Dijonsenap och vitlök är alltid gott! Tycker du inte om koriander kan du byta mot någon annan färsk ört - t.ex. timjan
-eller basilika.
+Och Dijonsenap och vitlök är alltid gott! 
+
+Tycker du koriander smakar diskmedel är det inte ditt fel, det är genetiskt. I så fall kan du byta mot någon annan 
+färsk ört - t.ex. timjan eller basilika.
 
 
 ### Ingredienser
