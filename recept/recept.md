@@ -35,7 +35,7 @@ vattnet kommer att koka ner/reduceras. Går det för fort - häll på lite mer!
 4. Nu kan du kan plocka bort kycklingen från järnet.
 5. Kvar har du vätska, ca en halv till en deciliter per filé är lagom - i med Maizena-redning och dijonsenap, låt koka upp snabbt och rör 
 så att det inte klumpar sig...
-6. Häll lika mycket sås över varje filé garnera med koriander.
+6. Häll lika mycket sås över eller vid sidan av varje filé garnera med koriander.
 7. Broccoliriset då? Koka upp försiktigt, tillsätt lite salt, peppar och vitlök om du vill. Vill du att det ska smaka mer kan
 du lägga till på lite paprika- eller chilipulver också. Och sedan i med lite färsk grovhackad röd paprika.
 
