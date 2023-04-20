@@ -1,5 +1,29 @@
 ## Bräserade majskycklingfiléer, i dijonskysås med broccoliris
 
+Majskyckling smakar lite extra, men är dyrare än 'vanlig' kyckling. Den går utmärkt att byta mot vanliga kycklingbröst om du vill.
+Använd dock helst färska sådana. Frysta med vatten insprutat för den är mycket svårare att få fin stekyta på och 
+smakar gummiaktigt...
+
+Och Dijonsenap och vitlök är alltid gott! Tycker du inte om koriander kan du byta mot någon annan färsk ört - t.ex. timjan
+eller basilika.
+
+Stek kycklingen på hög värme i smör i ett gjutjärn, gärna ett med 'ränder', så får den fin färg. Vänd efter någon minut
+så att båda sidorna får fin färg. Salta och peppra
+
+Så fort kycklingen har fått färg kan du hälla på rejält med vatten (så att det nätt och jämnt täcker kycklingen) och 
+sänka värmen något. Sedan låter du den bräseras i vattnet i cirka 10 minuter, kolla den största filéen - gör ett snitt och
+kolla att den är genomstekt. Fördelen med bräsering är att kycklingen inte blir torr så lätt.
+
+Kör på relativt hög värme, vattnet kommeratt koka ner/reduceras. Går det för fort - häll på lite mer!
+
+När allt börjar bli klart, ner med vitlök pressad eller finhackad, en klyfta per filé... Du kan plocka bort kycklingen nu.
+Kvar har du vätska, ca 1/2 dl per filé är lagom - i med Maizena-redning och dijonsenap, låt koka upp snabbt och rör 
+så att det inte klumpar sig...
+
+Broccoliriset då? Koka upp försiktigt, tillsätt lite salt, peppar och vitlök om du vill. Vill du att det ska smaka mer kan
+du lägga till på lite paprika- eller chilipulver också. Och sedan i med lite färsk grovhackad röd paprika.
+
+
 ### Ingredienser
 | Ingrediens            | Slug                     | Antal | Enhet                     |     Vikt |     Pris/kg |
 |-----------------------|--------------------------|-------|---------------------------|----------|-------------|

@@ -12,7 +12,7 @@
 | Koriander             | basilikafarsk            |   1/4 | kruk(a/or)                | 1/4 * 35 | 21.90/0.035 |
 
 ### Priser
-Priser från april 2023. Rea på majskycklingfilén, 139 kr/kg. Bra!
+Priser från april 2023. Rea på majskycklingfilén, 139 kr/kg.
 
 ### Gör så här
 1. Sätt en panna (gärna gjutjärn) på hög värme och smält smöret.
