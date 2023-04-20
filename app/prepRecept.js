@@ -8,7 +8,7 @@ function prepRecept(x) {
     let el = dom.find(`h2:contains("${x}")`), text = '';
     do {
       el = el.next('p');
-      text += el.text();
+      text += el.text() + ' ';
     } while (el.filter('p').length);
     text = text.split(' ').slice(0, 50).join(' ').replace(/\W*$/g, '');
     return (text || loremGenerator(1)) + '…';
