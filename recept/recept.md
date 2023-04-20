@@ -105,8 +105,8 @@ Priser från april 2023. Rea på fläskfilen, 69:90 kr/kg.
 
 ## Burmesisk currygryta, på två sorters kyckling med blomkålsris
 
-Tja, hemligheten här är väl – kycklingmagarna! Kronfågel gör misstaget att försöka "dölja" att det tar tid att
-använda dem rätt. De har "3-minutersrecept", men jag lovar då smakar/känns "studsiga". Tricket är istället att
+Tja, hemligheten här är väl – kycklingmagarna! Kronfågel gör misstaget att försöka ”dölja” att det tar tid att
+använda dem rätt. De har ”3-minutersrecept”, men jag lovar då smakar/känns de ”studsiga”. Tricket är istället att
 koka dem – länge (2 timmar)...
 
 Magiskt är att kycklingmagar efter att ha blivit långkokade smakar som kycklinglår, mörkt kycklingkött, dvs. supergott.
