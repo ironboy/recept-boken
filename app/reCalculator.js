@@ -3,7 +3,7 @@ function reCalculator(show) {
     till <span class="portionNo">1 portion</span>
     <span class="portionChange">+</span>
     <span class="portionChange">-</span>
-  `);
+  `).prepend('<hr>');
   !window.portionsToShow && (window.portionsToShow = {});
   window.portionsToShow[location.hash] = window.portionsToShow[location.hash] ||
     +($('a:contains("initial portions to show")').attr('href') || 4);

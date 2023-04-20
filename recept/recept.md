@@ -8,7 +8,7 @@ Fördelen med bräsering är att kycklingen inte blir torr så lätt, vilket ann
 Och Dijonsenap och vitlök är alltid gott! 
 
 Tycker du koriander smakar diskmedel är det inte ditt fel, det är genetiskt. I så fall kan du byta mot någon annan 
-färsk ört - t.ex. timjan eller basilika.
+färsk ört – t.ex. timjan eller basilika.
 
 
 ### Ingredienser
