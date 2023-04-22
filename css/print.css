@@ -19,4 +19,8 @@
     display: none !important;
   }
 
+  .receptdetaljer h1~p {
+    display: none;
+  }
+
 }
